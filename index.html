@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The 30-Day AI Content Marketing Blueprint for Beginners: A Step-by-Step Roadmap</title>
+<meta name="description" content="A complete 30-day, module-by-module AI content marketing blueprint with practical examples — plan, create, distribute, and scale content using AI, one day at a time.">
+<meta name="keywords" content="30 day AI content marketing blueprint, AI content marketing plan for beginners, AI content strategy roadmap, how to use AI for content marketing">
+<style>
+  :root{
+    --ink:#1b1f24;
+    --sub:#5b6472;
+    --bg:#fbfaf7;
+    --card:#ffffff;
+    --accent:#7a4cff;
+    --accent2:#ff7a59;
+    --line:#eae6f5;
+    --code:#f4f1fb;
+    --radius:18px;
+  }
+  *{box-sizing:border-box;}
+  body{
+    margin:0;
+    font-family:'Segoe UI',-apple-system,BlinkMacSystemFont,Roboto,Helvetica,Arial,sans-serif;
+    background:var(--bg);
+    color:var(--ink);
+    line-height:1.75;
+  }
+  .wrap{max-width:880px;margin:0 auto;padding:0 20px 80px;}
+  header.hero{
+    background:linear-gradient(135deg,#7a4cff 0%,#5c8bff 50%,#3fd0c9 100%);
+    color:#fff;
+    padding:56px 20px 90px;
+    text-align:center;
+  }
+  header.hero .heroInner{max-width:880px;margin:0 auto;}
+  h1{font-size:2.35rem;line-height:1.25;margin:0 0 16px;font-weight:800;letter-spacing:-0.5px;}
+  .subtitle{font-size:1.15rem;opacity:0.95;max-width:640px;margin:0 auto 22px;font-weight:400;}
+  .meta{font-size:0.9rem;opacity:0.85;letter-spacing:0.3px;}
+  .heroImgWrap{margin:-60px auto 0;max-width:840px;padding:0 20px;}
+  .heroImgWrap img{width:100%;height:auto;border-radius:var(--radius);box-shadow:0 25px 50px -12px rgba(30,20,60,0.35);display:block;}
+  nav.langbar{
+    position:sticky;top:0;z-index:50;
+    background:rgba(255,255,255,0.92);
+    backdrop-filter:blur(8px);
+    border-bottom:1px solid var(--line);
+    padding:12px 20px;
+    display:flex;flex-wrap:wrap;gap:8px;justify-content:center;
+  }
+  nav.langbar span.label{font-size:0.85rem;color:var(--sub);align-self:center;margin-right:6px;font-weight:600;}
+  .langBtn{
+    border:1.5px solid var(--line);
+    background:#fff;
+    color:var(--ink);
+    padding:7px 16px;
+    border-radius:999px;
+    font-size:0.88rem;
+    font-weight:600;
+    cursor:pointer;
+    transition:all .15s ease;
+  }
+  .langBtn:hover{border-color:var(--accent);color:var(--accent);}
+  .langBtn.active{background:var(--accent);border-color:var(--accent);color:#fff;}
+  main{margin-top:56px;}
+  section{
+    background:var(--card);
+    border:1px solid var(--line);
+    border-radius:var(--radius);
+    padding:34px 34px 30px;
+    margin-bottom:26px;
+    box-shadow:0 2px 14px rgba(30,20,60,0.04);
+  }
+  section h2{
+    font-size:1.5rem;
+    margin:0 0 14px;
+    color:var(--ink);
+    display:flex;align-items:center;gap:10px;
+  }
+  .weekTag{
+    display:inline-block;
+    background:linear-gradient(135deg,var(--accent),#a78bff);
+    color:#fff;
+    font-size:0.72rem;
+    font-weight:700;
+    padding:4px 12px;
+    border-radius:999px;
+    letter-spacing:0.5px;
+    margin-bottom:10px;
+  }
+  p{margin:0 0 16px;color:var(--ink);font-size:1.02rem;}
+  ul{padding-left:22px;margin:0 0 16px;}
+  li{margin-bottom:8px;font-size:1.02rem;}
+  .imgBox{margin:20px 0;}
+  .imgBox img{width:100%;height:auto;border-radius:14px;display:block;box-shadow:0 10px 30px rgba(30,20,60,0.08);}
+  .imgCap{font-size:0.85rem;color:var(--sub);text-align:center;margin-top:8px;}
+  .example{
+    background:var(--code);
+    border-left:4px solid var(--accent);
+    border-radius:10px;
+    padding:16px 18px;
+    margin:16px 0;
+    font-size:0.95rem;
+  }
+  .example strong{color:var(--accent);}
+  table{width:100%;border-collapse:collapse;margin:16px 0;font-size:0.95rem;}
+  th,td{padding:10px 12px;border-bottom:1px solid var(--line);text-align:left;}
+  th{background:#f6f4fc;font-weight:700;}
+  .toolGrid{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:10px;}
+  @media(max-width:600px){.toolGrid{grid-template-columns:1fr;}}
+  .toolCard{background:var(--code);border-radius:12px;padding:14px 16px;}
+  .toolCard h4{margin:0 0 6px;font-size:0.98rem;color:var(--accent);}
+  .toolCard p{margin:0;font-size:0.9rem;color:var(--sub);}
+  .ctaBox{
+    background:linear-gradient(135deg,#1b1f24,#3a2e63);
+    color:#fff;
+    border-radius:var(--radius);
+    padding:36px;
+    text-align:center;
+  }
+  .ctaBox h2{color:#fff;justify-content:center;}
+  .ctaBox p{color:#e4e0f5;}
+  .ctaBtn{
+    display:inline-block;margin-top:10px;
+    background:#fff;color:var(--accent);
+    padding:12px 28px;border-radius:999px;
+    font-weight:700;text-decoration:none;font-size:0.95rem;
+  }
+  footer{text-align:center;color:var(--sub);font-size:0.85rem;padding:30px 20px 10px;}
+  .badge{display:inline-flex;gap:8px;flex-wrap:wrap;justify-content:center;margin-top:14px;}
+  .badge span{background:rgba(255,255,255,0.18);padding:5px 12px;border-radius:999px;font-size:0.78rem;}
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="heroInner">
+    <div class="badge"><span id="tag1">AI Marketing</span><span id="tag2">Beginner Friendly</span><span id="tag3">30-Day System</span></div>
+    <h1 id="mainTitle">The 30-Day AI Content Marketing Blueprint</h1>
+    <p class="subtitle" id="mainSubtitle">A step-by-step roadmap to plan, create, distribute and scale content using AI — broken into simple daily modules anyone can follow, even with zero prior experience.</p>
+    <p class="meta" id="mainMeta">9 min read · Beginner to Intermediate · Updated 2026</p>
+  </div>
+</header>
+<div class="heroImgWrap">
+  <img src="https://picsum.photos/seed/aiblueprint-hero2/1400/700" alt="AI content marketing blueprint desk with laptop and planning notes">
+</div>
+
+<nav class="langbar">
+  <span class="label" id="langLabel">Read in:</span>
+  <button class="langBtn active" data-lang="en">English</button>
+  <button class="langBtn" data-lang="hi">हिन्दी</button>
+  <button class="langBtn" data-lang="ta">தமிழ்</button>
+  <button class="langBtn" data-lang="mr">मराठी</button>
+  <button class="langBtn" data-lang="pa">ਪੰਜਾਬੀ</button>
+  <button class="langBtn" data-lang="fr">Français</button>
+</nav>
+
+<div class="wrap">
+<main>
+
+  <section id="s-intro">
+    <h2 id="h-intro">Why Most People Fail at AI Content Marketing — And How This Blueprint Fixes It</h2>
+    <p id="p-intro">
+    Most creators and small businesses don't fail at AI content marketing because the tools are weak — they fail because they never had a system. They open an AI chatbot, generate a random post, publish it, and wonder why nothing changes. Real results come from structure, not single prompts.
+    </p>
+    <p id="p-intro2">
+    This blueprint breaks the process into four intuitive weekly modules that build on each other: <strong>Foundation</strong>, <strong>Creation</strong>, <strong>Distribution</strong>, and <strong>Scale</strong>. Each day has one clear task, so you always know exactly what to do next — no overwhelm, no guesswork, just a repeatable system you can run every single month.
+    </p>
+  </section>
+
+  <section id="s-week1">
+    <div class="weekTag" id="wt1">WEEK 1 · DAYS 1–7</div>
+    <h2 id="h-week1">Module 1: Foundation & AI Tool Setup</h2>
+    <p id="p-week1a">
+    Before creating anything, you need clarity on who you're writing for and which tools will do the heavy lifting. Days 1–2 are for auditing your existing content and building a sharp audience persona with AI's help. Days 3–4 focus on selecting two or three core AI tools — one for writing, one for visuals, and one for scheduling — instead of chasing every new app that launches.
+    </p>
+    <div class="imgBox">
+      <img src="https://picsum.photos/seed/aiblueprint-week1b/1000/560" alt="Person planning content strategy with sticky notes and a laptop">
+      <p class="imgCap" id="cap1">A clear foundation prevents wasted content later.</p>
+    </div>
+    <p id="p-week1b">
+    Days 5–7 are spent building your "brand voice guide" — a short document describing your tone, values, and no-go words — and defining 3 to 5 content pillars, the core topics you'll always return to.
+    </p>
+    <div class="example" id="ex1">
+      <strong>Practical Example:</strong> Prompt for Day 5 — "Act as my brand voice coach. Based on these 5 sample posts I've written, describe my tone in 3 adjectives, list 5 words I overuse, and suggest a one-line voice guideline I can reuse in every future prompt."
+    </div>
+  </section>
+
+  <section id="s-week2">
+    <div class="weekTag" id="wt2">WEEK 2 · DAYS 8–14</div>
+    <h2 id="h-week2">Module 2: Ideation & Content Creation Systems</h2>
+    <p id="p-week2a">
+    Week 2 is where AI starts saving you real hours. Days 8–9 are for batch ideation: instead of thinking of one topic at a time, generate 30 content ideas in a single sitting using AI-assisted keyword clusters and "questions your audience is already asking."
+    </p>
+    <p id="p-week2b">
+    Days 10–11 introduce the repurposing system — the single highest-leverage habit in this entire blueprint. One long-form piece becomes five smaller assets for different platforms.
+    </p>
+    <table>
+      <tr><th id="tbl2h1">Original Asset</th><th id="tbl2h2">Repurposed Into</th></tr>
+      <tr><td id="tbl2r1">1 blog post / article</td><td id="tbl2r2">LinkedIn post + X/Twitter thread + Instagram caption + email snippet + short video script</td></tr>
+    </table>
+    <p id="p-week2c">
+    Day 12 applies the <strong>60/40 rule</strong>: AI drafts roughly 60% of the work, and a human refines the remaining 40% for accuracy, personality, and voice. Days 13–14 close the week by building a simple content calendar in a spreadsheet, mapping every asset to a publish date.
+    </p>
+  </section>
+
+  <section id="s-week3">
+    <div class="weekTag" id="wt3">WEEK 3 · DAYS 15–21</div>
+    <h2 id="h-week3">Module 3: Distribution & Optimization</h2>
+    <div class="imgBox">
+      <img src="https://picsum.photos/seed/aiblueprint-week3c/1000/560" alt="Analytics and social media distribution dashboard on a screen">
+      <p class="imgCap" id="cap3">Great content only works when it reaches the right eyes.</p>
+    </div>
+    <p id="p-week3a">
+    Creating content is only half the job — Week 3 is about getting it seen. Days 15–16 cover platform-specific formatting rules, because a caption that works on Instagram rarely works on LinkedIn without adjustment. Day 17 focuses on on-page optimization: using AI to draft multiple headline and meta-description variations, then picking the clearest, most specific one rather than the cleverest.
+    </p>
+    <ul id="seoList">
+      <li id="seo1">Write one specific, long-tail title instead of a broad, generic one</li>
+      <li id="seo2">Use AI to generate 5 headline variants, then choose by clarity, not cleverness</li>
+      <li id="seo3">Add descriptive alt text to every image for accessibility and search</li>
+      <li id="seo4">Keep meta descriptions under 155 characters and benefit-focused</li>
+    </ul>
+    <p id="p-week3b">
+    Days 18–21 cover hashtag and community distribution, newsletter integration, and using AI to draft (never auto-send) thoughtful replies to comments — because engagement is what actually signals relevance to any platform's algorithm.
+    </p>
+  </section>
+
+  <section id="s-week4">
+    <div class="weekTag" id="wt4">WEEK 4 · DAYS 22–30</div>
+    <h2 id="h-week4">Module 4: Scale, Analyze & Automate</h2>
+    <p id="p-week4a">
+    The final module turns your content system into a machine that improves itself. Days 22–23 are for setting up a simple analytics dashboard tracking click-through rate, engagement, and conversions — three numbers, no more, so you never drown in data.
+    </p>
+    <div class="imgBox">
+      <img src="https://picsum.photos/seed/aiblueprint-week4d/1000/560" alt="Marketing performance analytics chart shown on a laptop screen">
+      <p class="imgCap" id="cap4">Let performance data — not guesswork — decide what you create next.</p>
+    </div>
+    <p id="p-week4b">
+    Days 24–25 identify your top three performing pieces and use AI to build a "content cluster" around each one — five related pieces that reinforce the winner. Days 26–27 introduce light automation: auto-scheduling posts and using AI to summarize audience comments into weekly themes.
+    </p>
+    <div class="example" id="ex4">
+      <strong>Practical Example — Simple SOP for Day 28:</strong> "1) Pull last week's top comment themes. 2) Draft 3 new post ideas answering those themes. 3) Write first drafts in the brand voice guide tone. 4) Flag anything needing a fact-check before it goes to the human editor."
+    </div>
+    <p id="p-week4c">
+    Day 28 is for turning your own workflow into a written standard operating procedure (SOP) that AI or a teammate can follow without you. Day 29 uses last month's performance data to plan next month's pillars. Day 30 closes the cycle with a full month review and an AI-generated performance summary — then the 30-day loop begins again, sharper than before.
+    </p>
+  </section>
+
+  <section id="s-mistakes">
+    <h2 id="h-mistakes">Common Mistakes That Quietly Sabotage AI Content Marketing</h2>
+    <ul id="mistakeList">
+      <li id="m1">Publishing raw AI output without a human edit pass for accuracy and tone</li>
+      <li id="m2">Skipping the brand voice guide, so content sounds generic and interchangeable</li>
+      <li id="m3">Trying to post on every platform at once instead of mastering one first</li>
+      <li id="m4">Creating content with no repurposing system, wasting 80% of its potential reach</li>
+      <li id="m5">Never checking analytics, so the same mistakes repeat every month</li>
+      <li id="m6">Trusting AI-generated facts, statistics, or quotes without verifying the source</li>
+    </ul>
+  </section>
+
+  <section id="s-tools">
+    <h2 id="h-tools">Quick-Reference: The Only Tool Categories You Actually Need</h2>
+    <div class="toolGrid">
+      <div class="toolCard"><h4 id="tool1h">Writing Assistant</h4><p id="tool1p">An AI chat assistant for drafting, outlining, and repurposing text-based content.</p></div>
+      <div class="toolCard"><h4 id="tool2h">Visual Design</h4><p id="tool2p">An AI-assisted design tool for graphics, thumbnails, and branded templates.</p></div>
+      <div class="toolCard"><h4 id="tool3h">Scheduling</h4><p id="tool3p">A scheduler to queue posts across platforms from one calendar view.</p></div>
+      <div class="toolCard"><h4 id="tool4h">Analytics</h4><p id="tool4p">A simple dashboard tracking clicks, engagement, and conversions only.</p></div>
+      <div class="toolCard"><h4 id="tool5h">Keyword Research</h4><p id="tool5p">A lightweight tool to find specific, low-competition topic angles.</p></div>
+      <div class="toolCard"><h4 id="tool6h">Short-Form Video</h4><p id="tool6p">An AI video/caption tool to turn text ideas into quick clips.</p></div>
+    </div>
+  </section>
+
+  <section class="ctaBox" id="s-cta">
+    <h2 id="h-cta">Your 30 Days Start Today</h2>
+    <p id="p-cta">
+    You don't need forty tools, a marketing degree, or a huge budget to build a content system that compounds. You need one clear day-by-day plan, a bit of discipline for the first cycle, and the willingness to let performance data guide the next one. Bookmark this blueprint, start with Day 1 today, and revisit it every month — each cycle gets faster and sharper than the last.
+    </p>
+    <a href="#s-week1" class="ctaBtn" id="ctaBtn">Start With Week 1</a>
+  </section>
+
+</main>
+
+<footer>
+  <p id="footerText">Original article · Written for creators, marketers, and small businesses starting their AI content journey.</p>
+</footer>
+</div>
+
+<script>
+const translations = {
+  hi: {
+    langLabel:"इस भाषा में पढ़ें:",
+    tag1:"एआई मार्केटिंग", tag2:"शुरुआती लोगों के लिए आसान", tag3:"30-दिवसीय सिस्टम",
+    mainTitle:"30-दिवसीय एआई कंटेंट मार्केटिंग ब्लूप्रिंट",
+    mainSubtitle:"एआई की मदद से कंटेंट को योजना बनाने, बनाने, वितरित करने और बढ़ाने की एक चरण-दर-चरण गाइड — आसान दैनिक मॉड्यूल में बंटी हुई, जिसे बिना किसी पूर्व अनुभव के भी कोई अपना सकता है।",
+    mainMeta:"9 मिनट का पठन · शुरुआती से मध्यम स्तर · 2026 में अपडेट किया गया",
+    "h-intro":"ज़्यादातर लोग एआई कंटेंट मार्केटिंग में क्यों असफल होते हैं — और यह ब्लूप्रिंट इसे कैसे ठीक करता है",
+    "p-intro":"ज़्यादातर क्रिएटर और छोटे व्यवसाय एआई कंटेंट मार्केटिंग में इसलिए असफल नहीं होते कि टूल्स कमज़ोर हैं — बल्कि इसलिए क्योंकि उनके पास कभी कोई सिस्टम ही नहीं था। वे एक एआई चैटबॉट खोलते हैं, एक रैंडम पोस्ट बनाते हैं, उसे प्रकाशित कर देते हैं, और फिर सोचते हैं कि कुछ बदला क्यों नहीं। असली नतीजे एक व्यवस्था से आते हैं, अकेले किसी प्रॉम्प्ट से नहीं।",
+    "p-intro2":"यह ब्लूप्रिंट पूरी प्रक्रिया को चार सहज साप्ताहिक मॉड्यूल में बांटता है, जो एक-दूसरे पर आधारित हैं: <strong>नींव</strong>, <strong>निर्माण</strong>, <strong>वितरण</strong> और <strong>विस्तार</strong>। हर दिन का एक स्पष्ट काम है, ताकि आपको हमेशा पता रहे कि आगे क्या करना है — न कोई उलझन, न कोई अंदाज़ा, बस एक ऐसा दोहराने योग्य सिस्टम जिसे आप हर महीने चला सकें।",
+    wt1:"सप्ताह 1 · दिन 1–7", "h-week1":"मॉड्यूल 1: नींव और एआई टूल सेटअप",
+    "p-week1a":"कुछ भी बनाने से पहले, आपको यह स्पष्ट होना चाहिए कि आप किसके लिए लिख रहे हैं और कौन-से टूल असली काम करेंगे। दिन 1–2 में अपने मौजूदा कंटेंट का ऑडिट करें और एआई की मदद से एक सटीक ऑडियंस प्रोफ़ाइल बनाएं। दिन 3–4 में हर नए ऐप के पीछे भागने के बजाय, दो या तीन मुख्य एआई टूल चुनने पर ध्यान दें — एक लेखन के लिए, एक विज़ुअल्स के लिए, और एक शेड्यूलिंग के लिए।",
+    cap1:"एक स्पष्ट नींव बाद में कंटेंट की बर्बादी को रोकती है।",
+    "p-week1b":"दिन 5–7 में अपनी \"ब्रांड वॉयस गाइड\" बनाएं — एक छोटा दस्तावेज़ जो आपके टोन, मूल्यों और न इस्तेमाल किए जाने वाले शब्दों का वर्णन करे — और 3 से 5 कंटेंट पिलर तय करें, यानी वे मुख्य विषय जिन पर आप बार-बार लौटेंगे।",
+    ex1:"<strong>व्यावहारिक उदाहरण:</strong> दिन 5 के लिए प्रॉम्प्ट — \"मेरे ब्रांड वॉयस कोच की तरह काम करें। मेरे लिखे इन 5 सैंपल पोस्ट के आधार पर, मेरे टोन को 3 विशेषणों में बताएं, 5 ऐसे शब्द बताएं जिनका मैं ज़्यादा इस्तेमाल करता हूं, और एक पंक्ति की वॉयस गाइडलाइन सुझाएं जिसे मैं हर भविष्य के प्रॉम्प्ट में दोबारा इस्तेमाल कर सकूं।\"",
+    wt2:"सप्ताह 2 · दिन 8–14", "h-week2":"मॉड्यूल 2: विचार और कंटेंट निर्माण सिस्टम",
+    "p-week2a":"सप्ताह 2 वह जगह है जहां एआई असल में आपके घंटे बचाना शुरू करता है। दिन 8–9 में बैच आइडिएशन करें: एक बार में एक विषय सोचने के बजाय, एआई-सहायित कीवर्ड क्लस्टर और \"आपकी ऑडियंस पहले से जो सवाल पूछ रही है\" का इस्तेमाल करके एक ही बैठक में 30 कंटेंट आइडिया तैयार करें।",
+    "p-week2b":"दिन 10–11 में रीपर्पजिंग सिस्टम शुरू करें — इस पूरे ब्लूप्रिंट की सबसे प्रभावी आदत। एक लंबा कंटेंट पीस अलग-अलग प्लेटफ़ॉर्म के लिए पांच छोटे एसेट में बदल जाता है।",
+    tbl2h1:"मूल कंटेंट", tbl2h2:"इनमें बदला गया",
+    tbl2r1:"1 ब्लॉग पोस्ट / लेख", tbl2r2:"LinkedIn पोस्ट + X/Twitter थ्रेड + Instagram कैप्शन + ईमेल स्निपेट + छोटी वीडियो स्क्रिप्ट",
+    "p-week2c":"दिन 12 में <strong>60/40 नियम</strong> लागू करें: एआई लगभग 60% काम का ड्राफ्ट तैयार करता है, और बाकी 40% को सटीकता, व्यक्तित्व और टोन के लिए एक इंसान संशोधित करता है। दिन 13–14 में एक स्प्रेडशीट में सरल कंटेंट कैलेंडर बनाकर सप्ताह पूरा करें, हर एसेट को एक प्रकाशन तिथि से जोड़ते हुए।",
+    wt3:"सप्ताह 3 · दिन 15–21", "h-week3":"मॉड्यूल 3: वितरण और अनुकूलन",
+    cap3:"बेहतरीन कंटेंट तभी काम करता है जब वह सही लोगों तक पहुंचे।",
+    "p-week3a":"कंटेंट बनाना काम का सिर्फ आधा हिस्सा है — सप्ताह 3 उसे देखे जाने के बारे में है। दिन 15–16 में प्लेटफ़ॉर्म-विशिष्ट फ़ॉर्मेटिंग नियमों को कवर करें, क्योंकि जो कैप्शन Instagram पर काम करता है वह बिना बदलाव के LinkedIn पर शायद ही काम करे। दिन 17 ऑन-पेज ऑप्टिमाइज़ेशन पर केंद्रित है: एआई का उपयोग करके कई हेडलाइन और मेटा-डिस्क्रिप्शन विकल्प तैयार करें, फिर सबसे चतुर नहीं बल्कि सबसे स्पष्ट और सटीक विकल्प चुनें।",
+    seo1:"एक व्यापक, सामान्य टाइटल के बजाय एक विशिष्ट, लॉन्ग-टेल टाइटल लिखें",
+    seo2:"एआई से 5 हेडलाइन विकल्प बनवाएं, फिर चतुराई से नहीं, स्पष्टता से चुनें",
+    seo3:"हर इमेज में सुलभता और सर्च के लिए वर्णनात्मक ऑल्ट टेक्स्ट जोड़ें",
+    seo4:"मेटा डिस्क्रिप्शन को 155 अक्षरों के अंदर रखें और लाभ पर केंद्रित रखें",
+    "p-week3b":"दिन 18–21 में हैशटैग और कम्युनिटी डिस्ट्रिब्यूशन, न्यूज़लेटर इंटीग्रेशन, और कमेंट्स के विचारशील जवाब तैयार करने (कभी ऑटो-सेंड नहीं) के लिए एआई का उपयोग करना शामिल है — क्योंकि एंगेजमेंट ही किसी भी प्लेटफ़ॉर्म के एल्गोरिद्म को प्रासंगिकता का संकेत देता है।",
+    wt4:"सप्ताह 4 · दिन 22–30", "h-week4":"मॉड्यूल 4: विस्तार, विश्लेषण और ऑटोमेशन",
+    "p-week4a":"अंतिम मॉड्यूल आपके कंटेंट सिस्टम को एक ऐसी मशीन में बदल देता है जो खुद को बेहतर बनाती है। दिन 22–23 में क्लिक-थ्रू रेट, एंगेजमेंट और कन्वर्ज़न को ट्रैक करने वाला एक सरल एनालिटिक्स डैशबोर्ड सेट करें — बस तीन आंकड़े, इससे ज़्यादा नहीं, ताकि आप डेटा में डूब न जाएं।",
+    cap4:"अगला कंटेंट क्या बनाना है, यह अंदाज़े से नहीं — परफॉर्मेंस डेटा से तय करें।",
+    "p-week4b":"दिन 24–25 में अपने तीन सबसे बेहतर प्रदर्शन करने वाले कंटेंट को पहचानें और हर एक के आस-पास एआई की मदद से एक \"कंटेंट क्लस्टर\" बनाएं — पांच जुड़े हुए पीस जो उस विजेता को और मज़बूत करें। दिन 26–27 में हल्का ऑटोमेशन शुरू करें: पोस्ट को ऑटो-शेड्यूल करना और ऑडियंस कमेंट्स को साप्ताहिक थीम में संक्षेप में बताने के लिए एआई का उपयोग करना।",
+    ex4:"<strong>व्यावहारिक उदाहरण — दिन 28 के लिए सरल SOP:</strong> \"1) पिछले सप्ताह की टॉप कमेंट थीम निकालें। 2) उन थीम का जवाब देने वाले 3 नए पोस्ट आइडिया तैयार करें। 3) ब्रांड वॉयस गाइड के टोन में पहला ड्राफ्ट लिखें। 4) मानव संपादक के पास जाने से पहले जिसे भी फ़ैक्ट-चेक की ज़रूरत हो उसे फ़्लैग करें।\"",
+    "p-week4c":"दिन 28 में अपने खुद के वर्कफ़्लो को एक लिखित मानक संचालन प्रक्रिया (SOP) में बदलें, जिसे एआई या कोई साथी आपके बिना भी फॉलो कर सके। दिन 29 में पिछले महीने के परफॉर्मेंस डेटा का उपयोग करके अगले महीने के पिलर तय करें। दिन 30 पूरे महीने की समीक्षा और एआई-जनित परफॉर्मेंस सारांश के साथ चक्र को बंद करता है — फिर 30-दिन का चक्र फिर से शुरू होता है, पहले से भी बेहतर।",
+    "h-mistakes":"आम गलतियां जो चुपचाप एआई कंटेंट मार्केटिंग को नुकसान पहुंचाती हैं",
+    m1:"सटीकता और टोन के लिए मानव संपादन के बिना कच्चा एआई आउटपुट प्रकाशित करना",
+    m2:"ब्रांड वॉयस गाइड को छोड़ना, जिससे कंटेंट सामान्य और अदल-बदल जैसा लगता है",
+    m3:"पहले एक प्लेटफ़ॉर्म में महारत हासिल करने के बजाय एक साथ हर प्लेटफ़ॉर्म पर पोस्ट करने की कोशिश करना",
+    m4:"बिना रीपर्पजिंग सिस्टम के कंटेंट बनाना, जिससे उसकी 80% संभावित पहुंच बर्बाद हो जाती है",
+    m5:"एनालिटिक्स कभी न देखना, जिससे वही गलतियां हर महीने दोहराई जाती हैं",
+    m6:"स्रोत की पुष्टि किए बिना एआई-जनित तथ्यों, आंकड़ों या उद्धरणों पर भरोसा करना",
+    "h-tools":"त्वरित संदर्भ: वे टूल श्रेणियां जिनकी आपको वास्तव में ज़रूरत है",
+    tool1h:"राइटिंग असिस्टेंट", tool1p:"टेक्स्ट-आधारित कंटेंट के ड्राफ्टिंग, आउटलाइनिंग और रीपर्पजिंग के लिए एक एआई चैट असिस्टेंट।",
+    tool2h:"विज़ुअल डिज़ाइन", tool2p:"ग्राफ़िक्स, थंबनेल और ब्रांडेड टेम्पलेट्स के लिए एआई-सहायित डिज़ाइन टूल।",
+    tool3h:"शेड्यूलिंग", tool3p:"एक ही कैलेंडर व्यू से कई प्लेटफ़ॉर्म पर पोस्ट क्यू करने वाला शेड्यूलर।",
+    tool4h:"एनालिटिक्स", tool4p:"केवल क्लिक, एंगेजमेंट और कन्वर्ज़न ट्रैक करने वाला सरल डैशबोर्ड।",
+    tool5h:"कीवर्ड रिसर्च", tool5p:"विशिष्ट, कम प्रतिस्पर्धा वाले विषय कोण खोजने के लिए एक हल्का टूल।",
+    tool6h:"शॉर्ट-फॉर्म वीडियो", tool6p:"टेक्स्ट आइडिया को त्वरित क्लिप में बदलने वाला एआई वीडियो/कैप्शन टूल।",
+    "h-cta":"आपके 30 दिन आज से शुरू होते हैं",
+    "p-cta":"एक ऐसा कंटेंट सिस्टम बनाने के लिए जो लगातार बढ़ता जाए, आपको चालीस टूल, मार्केटिंग डिग्री या बड़े बजट की ज़रूरत नहीं है। आपको चाहिए एक स्पष्ट दिन-प्रतिदिन की योजना, पहले चक्र के लिए थोड़ा अनुशासन, और अगले चक्र को परफॉर्मेंस डेटा से तय करने की इच्छा। इस ब्लूप्रिंट को बुकमार्क करें, आज ही दिन 1 से शुरू करें, और हर महीने इसे फिर से देखें — हर चक्र पिछले से तेज़ और बेहतर होता जाएगा।",
+    ctaBtn:"सप्ताह 1 से शुरू करें",
+    footerText:"मौलिक लेख · क्रिएटर्स, मार्केटर्स और अपनी एआई कंटेंट यात्रा शुरू करने वाले छोटे व्यवसायों के लिए लिखा गया।"
+  },
+  ta: {
+    langLabel:"இந்த மொழியில் படிக்க:",
+    tag1:"AI மார்க்கெட்டிங்", tag2:"தொடக்கநிலையாளர்களுக்கு எளிது", tag3:"30-நாள் திட்டம்",
+    mainTitle:"30-நாள் AI உள்ளடக்க மார்க்கெட்டிங் திட்டவரைபடம்",
+    mainSubtitle:"AI-ஐப் பயன்படுத்தி உள்ளடக்கத்தைத் திட்டமிட, உருவாக்க, விநியோகிக்க மற்றும் விரிவுபடுத்த ஒரு படிப்படியான வழிகாட்டி — முன் அனுபவம் இல்லாதவர்களும் பின்பற்றக்கூடிய எளிய தினசரி பகுதிகளாகப் பிரிக்கப்பட்டுள்ளது.",
+    mainMeta:"9 நிமிட வாசிப்பு · தொடக்கம் முதல் இடைநிலை வரை · 2026-ல் புதுப்பிக்கப்பட்டது",
+    "h-intro":"பெரும்பாலானோர் AI உள்ளடக்க மார்க்கெட்டிங்கில் ஏன் தோல்வியடைகிறார்கள் — இந்த திட்டவரைபடம் அதை எப்படி சரிசெய்கிறது",
+    "p-intro":"பெரும்பாலான உருவாக்குநர்களும் சிறு வணிகங்களும் AI உள்ளடக்க மார்க்கெட்டிங்கில் தோல்வியடைவது கருவிகள் பலவீனமாக இருப்பதால் அல்ல — அவர்களிடம் ஒருபோதும் ஒரு முறை இருந்ததில்லை என்பதே காரணம். அவர்கள் ஒரு AI சாட்பாட்டைத் திறந்து, ஒரு சீரற்ற பதிவை உருவாக்கி, அதை வெளியிட்டு, ஏன் எதுவும் மாறவில்லை என்று யோசிக்கிறார்கள். உண்மையான முடிவுகள் ஒரு அமைப்பிலிருந்து வருகின்றன, தனிப் பிராம்ப்ட்களிலிருந்து அல்ல.",
+    "p-intro2":"இந்த திட்டவரைபடம் முழு செயல்முறையையும் ஒன்றுக்கொன்று தொடர்புடைய நான்கு உள்ளுணர்வான வாராந்திர பகுதிகளாகப் பிரிக்கிறது: <strong>அடித்தளம்</strong>, <strong>உருவாக்கம்</strong>, <strong>விநியோகம்</strong>, மற்றும் <strong>விரிவாக்கம்</strong>. ஒவ்வொரு நாளுக்கும் ஒரு தெளிவான பணி உள்ளது, எனவே அடுத்து என்ன செய்ய வேண்டும் என்பது எப்போதும் உங்களுக்குத் தெரியும் — குழப்பமும் இல்லை, யூகமும் இல்லை, ஒவ்வொரு மாதமும் நீங்கள் இயக்கக்கூடிய ஒரு மீண்டும் பயன்படுத்தக்கூடிய முறை மட்டுமே.",
+    wt1:"வாரம் 1 · நாள் 1–7", "h-week1":"பகுதி 1: அடித்தளம் மற்றும் AI கருவி அமைப்பு",
+    "p-week1a":"எதையும் உருவாக்கும் முன், நீங்கள் யாருக்காக எழுதுகிறீர்கள், எந்த கருவிகள் கடின வேலையைச் செய்யும் என்பதில் தெளிவு வேண்டும். நாள் 1–2 உங்கள் தற்போதைய உள்ளடக்கத்தை ஆய்வு செய்து, AI உதவியுடன் ஒரு கூர்மையான பார்வையாளர் விவரக்குறிப்பை உருவாக்குவதற்கானது. நாள் 3–4 புதிதாக வெளிவரும் ஒவ்வொரு ஆப்பையும் துரத்துவதற்குப் பதிலாக, இரண்டு அல்லது மூன்று முக்கிய AI கருவிகளைத் தேர்ந்தெடுப்பதில் கவனம் செலுத்துகிறது — எழுதுவதற்கு ஒன்று, காட்சிகளுக்கு ஒன்று, திட்டமிடலுக்கு ஒன்று.",
+    cap1:"தெளிவான அடித்தளம் பின்னர் உள்ளடக்கம் வீணாவதைத் தடுக்கிறது.",
+    "p-week1b":"நாள் 5–7 உங்கள் \"பிராண்ட் குரல் வழிகாட்டியை\" உருவாக்குவதில் செலவிடப்படுகிறது — உங்கள் தொனி, மதிப்புகள் மற்றும் தவிர்க்க வேண்டிய சொற்களை விவரிக்கும் ஒரு சிறிய ஆவணம் — மற்றும் நீங்கள் எப்போதும் திரும்பி வரும் முக்கிய தலைப்புகளான 3 முதல் 5 உள்ளடக்க தூண்களை வரையறுப்பது.",
+    ex1:"<strong>நடைமுறை உதாரணம்:</strong> நாள் 5-க்கான பிராம்ப்ட் — \"என் பிராண்ட் குரல் பயிற்சியாளராகச் செயல்படுங்கள். நான் எழுதிய இந்த 5 மாதிரி பதிவுகளின் அடிப்படையில், என் தொனியை 3 பெயரடைகளில் விவரியுங்கள், நான் அதிகமாகப் பயன்படுத்தும் 5 சொற்களைப் பட்டியலிடுங்கள், எதிர்கால ஒவ்வொரு பிராம்ப்ட்டிலும் மீண்டும் பயன்படுத்தக்கூடிய ஒரு வரி குரல் வழிகாட்டுதலை பரிந்துரையுங்கள்.\"",
+    wt2:"வாரம் 2 · நாள் 8–14", "h-week2":"பகுதி 2: யோசனை மற்றும் உள்ளடக்க உருவாக்க முறைமைகள்",
+    "p-week2a":"AI உண்மையிலேயே உங்கள் நேரத்தை மிச்சப்படுத்தத் தொடங்குவது வாரம் 2-தான். நாள் 8–9 தொகுதி யோசனைக்கானது: ஒரு நேரத்தில் ஒரு தலைப்பைப் பற்றி யோசிப்பதற்குப் பதிலாக, AI உதவியுடன் முக்கிய சொல் கொத்துகளையும் \"உங்கள் பார்வையாளர்கள் ஏற்கனவே கேட்கும் கேள்விகளையும்\" பயன்படுத்தி ஒரே அமர்வில் 30 உள்ளடக்க யோசனைகளை உருவாக்குங்கள்.",
+    "p-week2b":"நாள் 10–11 மறுபயன்பாட்டு முறையை அறிமுகப்படுத்துகிறது — இந்த முழு திட்டவரைபடத்திலும் மிக அதிக பயனளிக்கும் பழக்கம். ஒரு நீண்ட உள்ளடக்கத் துண்டு வெவ்வேறு தளங்களுக்கான ஐந்து சிறிய பகுதிகளாக மாறுகிறது.",
+    tbl2h1:"அசல் உள்ளடக்கம்", tbl2h2:"இதில் மறுபயன்படுத்தப்பட்டது",
+    tbl2r1:"1 வலைப்பதிவு / கட்டுரை", tbl2r2:"LinkedIn பதிவு + X/Twitter த்ரெட் + Instagram தலைப்புரை + மின்னஞ்சல் பகுதி + குறு வீடியோ ஸ்கிரிப்ட்",
+    "p-week2c":"நாள் 12 <strong>60/40 விதியைப்</strong> பயன்படுத்துகிறது: AI சுமார் 60% வேலையை வரைவு செய்கிறது, மீதமுள்ள 40%-ஐ ஒரு மனிதர் துல்லியம், தனித்துவம் மற்றும் தொனிக்காகச் செம்மைப்படுத்துகிறார். நாள் 13–14 ஒரு விரிதாளில் எளிய உள்ளடக்க நாட்காட்டியை உருவாக்கி, ஒவ்வொரு பகுதியையும் ஒரு வெளியீட்டு தேதியுடன் இணைத்து வாரத்தை முடிக்கிறது.",
+    wt3:"வாரம் 3 · நாள் 15–21", "h-week3":"பகுதி 3: விநியோகம் மற்றும் மேம்படுத்தல்",
+    cap3:"சிறந்த உள்ளடக்கம் சரியான கண்களை அடையும்போது மட்டுமே வேலை செய்கிறது.",
+    "p-week3a":"உள்ளடக்கத்தை உருவாக்குவது வேலையின் பாதி மட்டுமே — வாரம் 3 அது பார்க்கப்படுவதைப் பற்றியது. நாள் 15–16 தள-குறிப்பிட்ட வடிவமைப்பு விதிகளை உள்ளடக்கியது, ஏனெனில் Instagram-ல் வேலை செய்யும் தலைப்புரை மாற்றமின்றி LinkedIn-ல் அரிதாகவே வேலை செய்யும். நாள் 17 பக்க-மேம்படுத்தலில் கவனம் செலுத்துகிறது: AI-ஐப் பயன்படுத்தி பல தலைப்பு மற்றும் மெட்டா-விளக்க மாறுபாடுகளை வரைவு செய்து, புத்திசாலித்தனமானதைவிட தெளிவான, குறிப்பிட்ட ஒன்றைத் தேர்ந்தெடுங்கள்.",
+    seo1:"பரந்த, பொதுவான தலைப்பிற்குப் பதிலாக ஒரு குறிப்பிட்ட, லாங்-டெயில் தலைப்பை எழுதுங்கள்",
+    seo2:"AI மூலம் 5 தலைப்பு மாறுபாடுகளை உருவாக்கி, புத்திசாலித்தனத்தால் அல்ல, தெளிவால் தேர்ந்தெடுங்கள்",
+    seo3:"அணுகல் மற்றும் தேடலுக்காக ஒவ்வொரு படத்திற்கும் விளக்கமான ஆல்ட் டெக்ஸ்ட் சேர்க்கவும்",
+    seo4:"மெட்டா விளக்கங்களை 155 எழுத்துகளுக்குள் வைத்து, பயன் மையமாக வைக்கவும்",
+    "p-week3b":"நாள் 18–21 ஹேஷ்டேக் மற்றும் சமூக விநியோகம், செய்திமடல் ஒருங்கிணைப்பு, மற்றும் கருத்துகளுக்கு சிந்தனைமிக்க பதில்களை (ஒருபோதும் தானாக அனுப்ப வேண்டாம்) வரைவு செய்ய AI-ஐப் பயன்படுத்துவதை உள்ளடக்கியது — ஏனெனில் ஈடுபாடே எந்த தளத்தின் அல்காரிதத்திற்கும் பொருத்தத்தைக் குறிக்கிறது.",
+    wt4:"வாரம் 4 · நாள் 22–30", "h-week4":"பகுதி 4: விரிவாக்கம், பகுப்பாய்வு மற்றும் தானியங்குமயமாக்கல்",
+    "p-week4a":"இறுதி பகுதி உங்கள் உள்ளடக்க முறையை தானாகவே மேம்படுத்திக் கொள்ளும் ஒரு இயந்திரமாக மாற்றுகிறது. நாள் 22–23 கிளிக்-த்ரூ விகிதம், ஈடுபாடு மற்றும் மாற்றங்களைக் கண்காணிக்கும் ஒரு எளிய பகுப்பாய்வு டாஷ்போர்டை அமைப்பதற்கானது — மூன்று எண்கள் மட்டும், அதற்கு மேல் இல்லை, எனவே நீங்கள் தரவில் மூழ்காதீர்கள்.",
+    cap4:"அடுத்து என்ன உருவாக்க வேண்டும் என்பதை யூகத்தால் அல்ல — செயல்திறன் தரவால் முடிவு செய்யுங்கள்.",
+    "p-week4b":"நாள் 24–25 உங்கள் சிறந்த மூன்று செயல்திறன் கொண்ட பகுதிகளை அடையாளம் கண்டு, ஒவ்வொன்றையும் சுற்றி AI உதவியுடன் ஒரு \"உள்ளடக்க கொத்தை\" உருவாக்குகிறது — வெற்றியாளரை வலுப்படுத்தும் ஐந்து தொடர்புடைய பகுதிகள். நாள் 26–27 இலகுவான தானியங்குமயமாக்கலை அறிமுகப்படுத்துகிறது: பதிவுகளை தானாக திட்டமிடுதல் மற்றும் பார்வையாளர் கருத்துகளை வாராந்திர கருப்பொருள்களாக சுருக்க AI-ஐப் பயன்படுத்துதல்.",
+    ex4:"<strong>நடைமுறை உதாரணம் — நாள் 28-க்கான எளிய SOP:</strong> \"1) கடந்த வார முக்கிய கருத்து கருப்பொருள்களை எடுங்கள். 2) அந்த கருப்பொருள்களுக்கு பதிலளிக்கும் 3 புதிய பதிவு யோசனைகளை வரைவு செய்யுங்கள். 3) பிராண்ட் குரல் வழிகாட்டி தொனியில் முதல் வரைவுகளை எழுதுங்கள். 4) மனித ஆசிரியரிடம் செல்வதற்கு முன் உண்மைச் சரிபார்ப்பு தேவைப்படும் எதையும் குறியிடுங்கள்.\"",
+    "p-week4c":"நாள் 28 உங்கள் சொந்த பணிப்பாய்வை AI அல்லது ஒரு குழு உறுப்பினர் உங்களின்றியே பின்பற்றக்கூடிய ஒரு எழுதப்பட்ட நிலையான செயல்பாட்டு நடைமுறையாக (SOP) மாற்றுவதற்கானது. நாள் 29 கடந்த மாத செயல்திறன் தரவைப் பயன்படுத்தி அடுத்த மாத தூண்களைத் திட்டமிடுகிறது. நாள் 30 ஒரு முழு மாத மதிப்பாய்வு மற்றும் AI-உருவாக்கிய செயல்திறன் சுருக்கத்துடன் சுழற்சியை முடிக்கிறது — பின்னர் 30-நாள் சுழற்சி மீண்டும் தொடங்குகிறது, முன்பை விட கூர்மையாக.",
+    "h-mistakes":"AI உள்ளடக்க மார்க்கெட்டிங்கை அமைதியாக சேதப்படுத்தும் பொதுவான தவறுகள்",
+    m1:"துல்லியம் மற்றும் தொனிக்காக மனித திருத்தம் இல்லாமல் மூல AI வெளியீட்டை வெளியிடுதல்",
+    m2:"பிராண்ட் குரல் வழிகாட்டியைத் தவிர்ப்பது, இதனால் உள்ளடக்கம் பொதுவானதாகவும் மாற்றக்கூடியதாகவும் தெரிகிறது",
+    m3:"முதலில் ஒரு தளத்தில் தேர்ச்சி பெறுவதற்குப் பதிலாக ஒரே நேரத்தில் அனைத்து தளங்களிலும் பதிவிட முயற்சிப்பது",
+    m4:"மறுபயன்பாட்டு முறை இல்லாமல் உள்ளடக்கத்தை உருவாக்குவது, அதன் சாத்தியமான 80% வரவை வீணாக்குகிறது",
+    m5:"பகுப்பாய்வை ஒருபோதும் பார்க்காதது, அதனால் ஒவ்வொரு மாதமும் அதே தவறுகள் மீண்டும் நிகழ்கின்றன",
+    m6:"மூலத்தைச் சரிபார்க்காமல் AI-உருவாக்கிய உண்மைகள், புள்ளிவிவரங்கள் அல்லது மேற்கோள்களை நம்புவது",
+    "h-tools":"விரைவு குறிப்பு: உங்களுக்கு உண்மையில் தேவையான கருவி வகைகள் மட்டும்",
+    tool1h:"எழுத்து உதவியாளர்", tool1p:"உரை அடிப்படையிலான உள்ளடக்கத்தை வரைவு செய்ய, கோடிடவும், மறுபயன்படுத்தவும் ஒரு AI அரட்டை உதவியாளர்.",
+    tool2h:"காட்சி வடிவமைப்பு", tool2p:"கிராஃபிக்ஸ், தம்பநெயில்கள் மற்றும் பிராண்ட் டெம்ப்ளேட்களுக்கான AI-உதவி வடிவமைப்பு கருவி.",
+    tool3h:"திட்டமிடல்", tool3p:"ஒரே நாட்காட்டி பார்வையிலிருந்து பல தளங்களில் பதிவுகளை வரிசைப்படுத்தும் திட்டமிடல் கருவி.",
+    tool4h:"பகுப்பாய்வு", tool4p:"கிளிக்குகள், ஈடுபாடு மற்றும் மாற்றங்களை மட்டும் கண்காணிக்கும் எளிய டாஷ்போர்டு.",
+    tool5h:"முக்கிய சொல் ஆராய்ச்சி", tool5p:"குறிப்பிட்ட, குறைந்த போட்டியுள்ள தலைப்பு கோணங்களைக் கண்டறிய ஒரு இலகுவான கருவி.",
+    tool6h:"குறு-வடிவ வீடியோ", tool6p:"உரை யோசனைகளை விரைவான கிளிப்களாக மாற்றும் AI வீடியோ/தலைப்புரை கருவி.",
+    "h-cta":"உங்கள் 30 நாட்கள் இன்று தொடங்குகின்றன",
+    "p-cta":"தொடர்ந்து வளரும் ஒரு உள்ளடக்க முறையை உருவாக்க உங்களுக்கு நாற்பது கருவிகளோ, மார்க்கெட்டிங் பட்டமோ, பெரிய பட்ஜெட்டோ தேவையில்லை. உங்களுக்குத் தேவை ஒரு தெளிவான நாள்தோறும் திட்டம், முதல் சுழற்சிக்கு கொஞ்சம் ஒழுக்கம், அடுத்த சுழற்சியை செயல்திறன் தரவு வழிநடத்த அனுமதிக்கும் விருப்பம். இந்த திட்டவரைபடத்தை புக்மார்க் செய்யுங்கள், இன்றே நாள் 1-லிருந்து தொடங்குங்கள், ஒவ்வொரு மாதமும் மீண்டும் பாருங்கள் — ஒவ்வொரு சுழற்சியும் முந்தையதை விட வேகமாகவும் கூர்மையாகவும் மாறும்.",
+    ctaBtn:"வாரம் 1-லிருந்து தொடங்குங்கள்",
+    footerText:"மூல கட்டுரை · உருவாக்குநர்கள், மார்க்கெட்டிங் நிபுணர்கள் மற்றும் தங்கள் AI உள்ளடக்க பயணத்தைத் தொடங்கும் சிறு வணிகங்களுக்காக எழுதப்பட்டது."
+  },
+  mr: {
+    langLabel:"या भाषेत वाचा:",
+    tag1:"AI मार्केटिंग", tag2:"नवशिक्यांसाठी सोपे", tag3:"30-दिवसांची प्रणाली",
+    mainTitle:"30-दिवसांचा AI कंटेंट मार्केटिंग ब्लूप्रिंट",
+    mainSubtitle:"AI च्या मदतीने कंटेंटचे नियोजन, निर्मिती, वितरण आणि विस्तार करण्यासाठी टप्प्याटप्प्याने मार्गदर्शक — सोप्या दैनंदिन भागांमध्ये विभागलेले, जे कोणताही पूर्वानुभव नसतानाही कोणीही अनुसरू शकतो.",
+    mainMeta:"9 मिनिटांचे वाचन · नवशिक्या ते मध्यम स्तर · 2026 मध्ये अद्ययावत",
+    "h-intro":"बहुतेक लोक AI कंटेंट मार्केटिंगमध्ये का अपयशी ठरतात — आणि हा ब्लूप्रिंट ते कसे सोडवतो",
+    "p-intro":"बहुतेक क्रिएटर्स आणि लहान व्यवसाय AI कंटेंट मार्केटिंगमध्ये अपयशी ठरतात याचे कारण साधने कमकुवत आहेत असे नाही — तर त्यांच्याकडे कधीच एक व्यवस्थित प्रणाली नव्हती हे आहे. ते AI चॅटबॉट उघडतात, एक यादृच्छिक पोस्ट तयार करतात, ती प्रकाशित करतात आणि मग विचार करतात की काहीच का बदलले नाही. खरे परिणाम एका रचनेतून येतात, एकट्या प्रॉम्प्टमधून नाही.",
+    "p-intro2":"हा ब्लूप्रिंट संपूर्ण प्रक्रियेला एकमेकांवर आधारित चार सहज साप्ताहिक भागांमध्ये विभागतो: <strong>पाया</strong>, <strong>निर्मिती</strong>, <strong>वितरण</strong> आणि <strong>विस्तार</strong>. प्रत्येक दिवसाला एक स्पष्ट काम आहे, त्यामुळे पुढे काय करायचे हे तुम्हाला नेहमी माहीत असते — गोंधळ नाही, अंदाज नाही, फक्त एक पुनरावृत्ती करता येणारी प्रणाली जी तुम्ही दर महिन्याला राबवू शकता.",
+    wt1:"आठवडा 1 · दिवस 1–7", "h-week1":"भाग 1: पाया आणि AI साधनांची मांडणी",
+    "p-week1a":"काहीही तयार करण्यापूर्वी, तुम्ही कोणासाठी लिहित आहात आणि कोणती साधने खरे काम करतील याची स्पष्टता हवी. दिवस 1–2 तुमच्या सध्याच्या कंटेंटचे परीक्षण करून AI च्या मदतीने अचूक ऑडियन्स प्रोफाइल तयार करण्यासाठी आहेत. दिवस 3–4 प्रत्येक नवीन अ‍ॅपच्या मागे धावण्याऐवजी दोन किंवा तीन मुख्य AI साधने निवडण्यावर लक्ष केंद्रित करतात — एक लेखनासाठी, एक व्हिज्युअल्ससाठी आणि एक शेड्युलिंगसाठी.",
+    cap1:"स्पष्ट पाया नंतर कंटेंट वाया जाण्यापासून वाचवतो.",
+    "p-week1b":"दिवस 5–7 तुमचे \"ब्रँड व्हॉइस गाइड\" तयार करण्यात घालवले जातात — तुमचा टोन, मूल्ये आणि टाळायचे शब्द सांगणारा एक छोटा दस्तऐवज — आणि 3 ते 5 कंटेंट पिलर्स ठरवण्यात, म्हणजेच तुम्ही वारंवार परत येणारे मुख्य विषय.",
+    ex1:"<strong>व्यावहारिक उदाहरण:</strong> दिवस 5 साठी प्रॉम्प्ट — \"माझ्या ब्रँड व्हॉइस कोचप्रमाणे काम करा. मी लिहिलेल्या या 5 नमुना पोस्टच्या आधारे, माझा टोन 3 विशेषणांत सांगा, मी जास्त वापरत असलेले 5 शब्द सांगा, आणि भविष्यातील प्रत्येक प्रॉम्प्टमध्ये पुन्हा वापरता येईल असे एक ओळीचे व्हॉइस मार्गदर्शक सुचवा.\"",
+    wt2:"आठवडा 2 · दिवस 8–14", "h-week2":"भाग 2: कल्पना आणि कंटेंट निर्मिती प्रणाली",
+    "p-week2a":"आठवडा 2 म्हणजे जिथे AI खरोखर तुमचे तास वाचवायला सुरुवात करतो. दिवस 8–9 बॅच आयडिएशनसाठी आहेत: एका वेळी एका विषयाचा विचार करण्याऐवजी, AI-सहाय्यित कीवर्ड क्लस्टर्स आणि \"तुमचे प्रेक्षक आधीच विचारत असलेले प्रश्न\" वापरून एकाच बैठकीत 30 कंटेंट कल्पना तयार करा.",
+    "p-week2b":"दिवस 10–11 पुनर्वापर प्रणाली (रीपर्पजिंग) सादर करतात — या संपूर्ण ब्लूप्रिंटमधील सर्वात प्रभावी सवय. एक मोठा कंटेंट भिन्न प्लॅटफॉर्मसाठी पाच लहान भागांमध्ये रूपांतरित होतो.",
+    tbl2h1:"मूळ कंटेंट", tbl2h2:"यात रूपांतरित",
+    tbl2r1:"1 ब्लॉग पोस्ट / लेख", tbl2r2:"LinkedIn पोस्ट + X/Twitter थ्रेड + Instagram कॅप्शन + ईमेल स्निपेट + लघु व्हिडिओ स्क्रिप्ट",
+    "p-week2c":"दिवस 12 <strong>60/40 नियम</strong> लागू करतो: AI सुमारे 60% काम तयार करतो, आणि उरलेले 40% अचूकता, व्यक्तिमत्त्व आणि टोनसाठी माणूस सुधारतो. दिवस 13–14 स्प्रेडशीटमध्ये साधे कंटेंट कॅलेंडर तयार करून, प्रत्येक भागाला प्रकाशन तारखेशी जोडून आठवडा पूर्ण करतात.",
+    wt3:"आठवडा 3 · दिवस 15–21", "h-week3":"भाग 3: वितरण आणि ऑप्टिमायझेशन",
+    cap3:"उत्तम कंटेंट फक्त तेव्हाच काम करतो जेव्हा तो योग्य लोकांपर्यंत पोहोचतो.",
+    "p-week3a":"कंटेंट तयार करणे हे कामाचा फक्त अर्धा भाग आहे — आठवडा 3 तो पाहिला जाण्याबद्दल आहे. दिवस 15–16 प्लॅटफॉर्म-विशिष्ट फॉरमॅटिंग नियम कव्हर करतात, कारण Instagram वर काम करणारा कॅप्शन बदलाशिवाय LinkedIn वर क्वचितच काम करतो. दिवस 17 ऑन-पेज ऑप्टिमायझेशनवर लक्ष केंद्रित करतो: AI वापरून अनेक हेडलाइन आणि मेटा-डिस्क्रिप्शन प्रकार तयार करा, नंतर सर्वात हुशार नव्हे तर सर्वात स्पष्ट आणि विशिष्ट पर्याय निवडा.",
+    seo1:"व्यापक, सर्वसाधारण शीर्षकाऐवजी एक विशिष्ट, लाँग-टेल शीर्षक लिहा",
+    seo2:"AI कडून 5 हेडलाइन प्रकार तयार करा, नंतर हुशारीने नव्हे तर स्पष्टतेनुसार निवडा",
+    seo3:"सुलभता आणि सर्चसाठी प्रत्येक इमेजला वर्णनात्मक ऑल्ट टेक्स्ट जोडा",
+    seo4:"मेटा डिस्क्रिप्शन 155 अक्षरांच्या आत ठेवा आणि फायद्यावर केंद्रित ठेवा",
+    "p-week3b":"दिवस 18–21 हॅशटॅग आणि कम्युनिटी वितरण, न्यूजलेटर इंटिग्रेशन, आणि कमेंट्सना विचारपूर्वक उत्तरे तयार करण्यासाठी (कधीही ऑटो-सेंड न करता) AI वापरणे यांचा समावेश करतात — कारण एंगेजमेंट हेच कोणत्याही प्लॅटफॉर्मच्या अल्गोरिदमला प्रासंगिकतेचे संकेत देते.",
+    wt4:"आठवडा 4 · दिवस 22–30", "h-week4":"भाग 4: विस्तार, विश्लेषण आणि ऑटोमेशन",
+    "p-week4a":"अंतिम भाग तुमच्या कंटेंट प्रणालीला स्वतःला सुधारणारे यंत्र बनवतो. दिवस 22–23 क्लिक-थ्रू रेट, एंगेजमेंट आणि कन्व्हर्जन ट्रॅक करणारा एक साधा अ‍ॅनालिटिक्स डॅशबोर्ड सेट करण्यासाठी आहेत — फक्त तीन आकडे, त्यापेक्षा जास्त नाही, जेणेकरून तुम्ही डेटामध्ये हरवणार नाही.",
+    cap4:"पुढे काय तयार करायचे हे अंदाजाने नव्हे — परफॉर्मन्स डेटाने ठरवू द्या.",
+    "p-week4b":"दिवस 24–25 तुमचे सर्वोत्तम कामगिरी करणारे तीन भाग ओळखतात आणि प्रत्येकाभोवती AI च्या मदतीने एक \"कंटेंट क्लस्टर\" तयार करतात — विजेत्याला बळकट करणारे पाच संबंधित भाग. दिवस 26–27 हलके ऑटोमेशन सादर करतात: पोस्ट्सचे ऑटो-शेड्युलिंग आणि प्रेक्षकांच्या कमेंट्सचा साप्ताहिक थीममध्ये सारांश करण्यासाठी AI वापरणे.",
+    ex4:"<strong>व्यावहारिक उदाहरण — दिवस 28 साठी साधी SOP:</strong> \"1) मागील आठवड्यातील टॉप कमेंट थीम काढा. 2) त्या थीमला उत्तर देणाऱ्या 3 नवीन पोस्ट कल्पना तयार करा. 3) ब्रँड व्हॉइस गाइडच्या टोनमध्ये पहिले ड्राफ्ट लिहा. 4) मानवी संपादकाकडे जाण्यापूर्वी फॅक्ट-चेक आवश्यक असलेल्या गोष्टींना फ्लॅग करा.\"",
+    "p-week4c":"दिवस 28 तुमच्या स्वतःच्या वर्कफ्लोला एका लिखित प्रमाणित कार्यपद्धतीत (SOP) रूपांतरित करण्यासाठी आहे, जी AI किंवा एखादा सहकारी तुमच्याशिवायही अनुसरू शकेल. दिवस 29 मागील महिन्याच्या परफॉर्मन्स डेटाचा वापर करून पुढील महिन्याचे पिलर्स ठरवतो. दिवस 30 संपूर्ण महिन्याचा आढावा आणि AI-निर्मित परफॉर्मन्स सारांशासह चक्र पूर्ण करतो — मग 30-दिवसांचे चक्र पुन्हा सुरू होते, आधीपेक्षा अधिक तीक्ष्ण.",
+    "h-mistakes":"AI कंटेंट मार्केटिंगला शांतपणे नुकसान पोहोचवणाऱ्या सामान्य चुका",
+    m1:"अचूकता आणि टोनसाठी मानवी संपादनाशिवाय कच्चा AI आउटपुट प्रकाशित करणे",
+    m2:"ब्रँड व्हॉइस गाइड वगळणे, त्यामुळे कंटेंट सर्वसाधारण आणि बदलण्याजोगा वाटतो",
+    m3:"आधी एका प्लॅटफॉर्मवर प्रभुत्व मिळवण्याऐवजी एकाच वेळी सर्व प्लॅटफॉर्मवर पोस्ट करण्याचा प्रयत्न करणे",
+    m4:"पुनर्वापर प्रणालीशिवाय कंटेंट तयार करणे, ज्यामुळे त्याची 80% संभाव्य पोहोच वाया जाते",
+    m5:"अ‍ॅनालिटिक्स कधीच न तपासणे, त्यामुळे त्याच चुका दर महिन्याला पुन्हा होतात",
+    m6:"स्रोताची पडताळणी न करता AI-निर्मित तथ्ये, आकडेवारी किंवा अवतरणांवर विश्वास ठेवणे",
+    "h-tools":"त्वरित संदर्भ: तुम्हाला खरोखर आवश्यक असलेल्या साधन श्रेणी",
+    tool1h:"रायटिंग असिस्टंट", tool1p:"मजकूर-आधारित कंटेंटचे ड्राफ्टिंग, आउटलाइनिंग आणि पुनर्वापर करण्यासाठी AI चॅट असिस्टंट.",
+    tool2h:"व्हिज्युअल डिझाइन", tool2p:"ग्राफिक्स, थंबनेल आणि ब्रँडेड टेम्प्लेटसाठी AI-सहाय्यित डिझाइन साधन.",
+    tool3h:"शेड्युलिंग", tool3p:"एकाच कॅलेंडर व्ह्यूमधून अनेक प्लॅटफॉर्मवर पोस्ट क्यू करणारे शेड्युलर.",
+    tool4h:"अ‍ॅनालिटिक्स", tool4p:"फक्त क्लिक्स, एंगेजमेंट आणि कन्व्हर्जन ट्रॅक करणारा साधा डॅशबोर्ड.",
+    tool5h:"कीवर्ड रिसर्च", tool5p:"विशिष्ट, कमी स्पर्धा असलेले विषय कोन शोधण्यासाठी एक हलके साधन.",
+    tool6h:"शॉर्ट-फॉर्म व्हिडिओ", tool6p:"मजकूर कल्पनांना जलद क्लिप्समध्ये रूपांतरित करणारे AI व्हिडिओ/कॅप्शन साधन.",
+    "h-cta":"तुमचे 30 दिवस आजपासून सुरू होतात",
+    "p-cta":"सतत वाढणारी कंटेंट प्रणाली तयार करण्यासाठी तुम्हाला चाळीस साधने, मार्केटिंग पदवी किंवा मोठे बजेट लागत नाही. तुम्हाला हवी आहे एक स्पष्ट दिवसागणिक योजना, पहिल्या चक्रासाठी थोडी शिस्त, आणि पुढील चक्राला परफॉर्मन्स डेटाने मार्गदर्शन करू देण्याची तयारी. हा ब्लूप्रिंट बुकमार्क करा, आजच दिवस 1 पासून सुरुवात करा, आणि दर महिन्याला पुन्हा पहा — प्रत्येक चक्र आधीपेक्षा वेगवान आणि अधिक तीक्ष्ण होईल.",
+    ctaBtn:"आठवडा 1 पासून सुरुवात करा",
+    footerText:"मूळ लेख · क्रिएटर्स, मार्केटर्स आणि त्यांचा AI कंटेंट प्रवास सुरू करणाऱ्या लहान व्यवसायांसाठी लिहिलेला."
+  },
+  pa: {
+    langLabel:"ਇਸ ਭਾਸ਼ਾ ਵਿੱਚ ਪੜ੍ਹੋ:",
+    tag1:"AI ਮਾਰਕੀਟਿੰਗ", tag2:"ਸ਼ੁਰੂਆਤੀਆਂ ਲਈ ਆਸਾਨ", tag3:"30-ਦਿਨਾਂ ਦੀ ਪ੍ਰਣਾਲੀ",
+    mainTitle:"30-ਦਿਨਾਂ ਦਾ AI ਕੰਟੈਂਟ ਮਾਰਕੀਟਿੰਗ ਬਲੂਪ੍ਰਿੰਟ",
+    mainSubtitle:"AI ਦੀ ਮਦਦ ਨਾਲ ਕੰਟੈਂਟ ਦੀ ਯੋਜਨਾ ਬਣਾਉਣ, ਬਣਾਉਣ, ਵੰਡਣ ਅਤੇ ਵਧਾਉਣ ਲਈ ਇੱਕ ਕਦਮ-ਦਰ-ਕਦਮ ਰੋਡਮੈਪ — ਸੌਖੇ ਰੋਜ਼ਾਨਾ ਮੌਡਿਊਲਾਂ ਵਿੱਚ ਵੰਡਿਆ ਗਿਆ, ਜਿਸਨੂੰ ਬਿਨਾਂ ਕਿਸੇ ਪਹਿਲੇ ਤਜਰਬੇ ਦੇ ਵੀ ਕੋਈ ਵੀ ਅਪਣਾ ਸਕਦਾ ਹੈ।",
+    mainMeta:"9 ਮਿੰਟ ਦਾ ਪੜ੍ਹਨਾ · ਸ਼ੁਰੂਆਤੀ ਤੋਂ ਦਰਮਿਆਨੇ ਪੱਧਰ ਤੱਕ · 2026 ਵਿੱਚ ਅੱਪਡੇਟ ਕੀਤਾ ਗਿਆ",
+    "h-intro":"ਬਹੁਤੇ ਲੋਕ AI ਕੰਟੈਂਟ ਮਾਰਕੀਟਿੰਗ ਵਿੱਚ ਕਿਉਂ ਅਸਫਲ ਹੁੰਦੇ ਹਨ — ਅਤੇ ਇਹ ਬਲੂਪ੍ਰਿੰਟ ਇਸਨੂੰ ਕਿਵੇਂ ਠੀਕ ਕਰਦਾ ਹੈ",
+    "p-intro":"ਬਹੁਤੇ ਕ੍ਰਿਏਟਰ ਅਤੇ ਛੋਟੇ ਕਾਰੋਬਾਰ AI ਕੰਟੈਂਟ ਮਾਰਕੀਟਿੰਗ ਵਿੱਚ ਇਸ ਲਈ ਅਸਫਲ ਨਹੀਂ ਹੁੰਦੇ ਕਿ ਟੂਲ ਕਮਜ਼ੋਰ ਹਨ — ਸਗੋਂ ਇਸ ਲਈ ਕਿਉਂਕਿ ਉਹਨਾਂ ਕੋਲ ਕਦੇ ਕੋਈ ਪ੍ਰਣਾਲੀ ਹੀ ਨਹੀਂ ਸੀ। ਉਹ ਇੱਕ AI ਚੈਟਬੋਟ ਖੋਲ੍ਹਦੇ ਹਨ, ਇੱਕ ਬੇਤਰਤੀਬ ਪੋਸਟ ਬਣਾਉਂਦੇ ਹਨ, ਉਸਨੂੰ ਪ੍ਰਕਾਸ਼ਿਤ ਕਰਦੇ ਹਨ, ਅਤੇ ਫਿਰ ਸੋਚਦੇ ਹਨ ਕਿ ਕੁਝ ਬਦਲਿਆ ਕਿਉਂ ਨਹੀਂ। ਅਸਲ ਨਤੀਜੇ ਇੱਕ ਢਾਂਚੇ ਤੋਂ ਆਉਂਦੇ ਹਨ, ਇਕੱਲੇ ਪ੍ਰੋਂਪਟ ਤੋਂ ਨਹੀਂ।",
+    "p-intro2":"ਇਹ ਬਲੂਪ੍ਰਿੰਟ ਪੂਰੀ ਪ੍ਰਕਿਰਿਆ ਨੂੰ ਇੱਕ-ਦੂਜੇ 'ਤੇ ਆਧਾਰਿਤ ਚਾਰ ਸਹਿਜ ਹਫ਼ਤਾਵਾਰੀ ਮੌਡਿਊਲਾਂ ਵਿੱਚ ਵੰਡਦਾ ਹੈ: <strong>ਬੁਨਿਆਦ</strong>, <strong>ਨਿਰਮਾਣ</strong>, <strong>ਵੰਡ</strong>, ਅਤੇ <strong>ਵਿਸਥਾਰ</strong>। ਹਰ ਦਿਨ ਦਾ ਇੱਕ ਸਪਸ਼ਟ ਕੰਮ ਹੈ, ਇਸ ਲਈ ਤੁਹਾਨੂੰ ਹਮੇਸ਼ਾ ਪਤਾ ਹੁੰਦਾ ਹੈ ਕਿ ਅੱਗੇ ਕੀ ਕਰਨਾ ਹੈ — ਨਾ ਕੋਈ ਉਲਝਣ, ਨਾ ਕੋਈ ਅੰਦਾਜ਼ਾ, ਬੱਸ ਇੱਕ ਅਜਿਹੀ ਦੁਹਰਾਈ ਜਾਣ ਵਾਲੀ ਪ੍ਰਣਾਲੀ ਜਿਸਨੂੰ ਤੁਸੀਂ ਹਰ ਮਹੀਨੇ ਚਲਾ ਸਕਦੇ ਹੋ।",
+    wt1:"ਹਫ਼ਤਾ 1 · ਦਿਨ 1–7", "h-week1":"ਮੌਡਿਊਲ 1: ਬੁਨਿਆਦ ਅਤੇ AI ਟੂਲ ਸੈੱਟਅੱਪ",
+    "p-week1a":"ਕੁਝ ਵੀ ਬਣਾਉਣ ਤੋਂ ਪਹਿਲਾਂ, ਤੁਹਾਨੂੰ ਇਹ ਸਪਸ਼ਟ ਹੋਣਾ ਚਾਹੀਦਾ ਹੈ ਕਿ ਤੁਸੀਂ ਕਿਸ ਲਈ ਲਿਖ ਰਹੇ ਹੋ ਅਤੇ ਕਿਹੜੇ ਟੂਲ ਅਸਲ ਕੰਮ ਕਰਨਗੇ। ਦਿਨ 1–2 ਤੁਹਾਡੇ ਮੌਜੂਦਾ ਕੰਟੈਂਟ ਦੀ ਜਾਂਚ ਕਰਨ ਅਤੇ AI ਦੀ ਮਦਦ ਨਾਲ ਇੱਕ ਸਪਸ਼ਟ ਦਰਸ਼ਕ ਪ੍ਰੋਫਾਈਲ ਬਣਾਉਣ ਲਈ ਹਨ। ਦਿਨ 3–4 ਹਰ ਨਵੀਂ ਐਪ ਦੇ ਪਿੱਛੇ ਭੱਜਣ ਦੀ ਬਜਾਏ ਦੋ ਜਾਂ ਤਿੰਨ ਮੁੱਖ AI ਟੂਲ ਚੁਣਨ 'ਤੇ ਧਿਆਨ ਦਿੰਦੇ ਹਨ — ਇੱਕ ਲਿਖਣ ਲਈ, ਇੱਕ ਵਿਜ਼ੁਅਲਸ ਲਈ, ਅਤੇ ਇੱਕ ਸ਼ਡਿਊਲਿੰਗ ਲਈ।",
+    cap1:"ਇੱਕ ਸਪਸ਼ਟ ਬੁਨਿਆਦ ਬਾਅਦ ਵਿੱਚ ਕੰਟੈਂਟ ਦੀ ਬਰਬਾਦੀ ਨੂੰ ਰੋਕਦੀ ਹੈ।",
+    "p-week1b":"ਦਿਨ 5–7 ਤੁਹਾਡੀ \"ਬ੍ਰਾਂਡ ਵੌਇਸ ਗਾਈਡ\" ਬਣਾਉਣ ਵਿੱਚ ਬਿਤਾਏ ਜਾਂਦੇ ਹਨ — ਇੱਕ ਛੋਟਾ ਦਸਤਾਵੇਜ਼ ਜੋ ਤੁਹਾਡੇ ਟੋਨ, ਕਦਰਾਂ-ਕੀਮਤਾਂ ਅਤੇ ਬਚਣ ਵਾਲੇ ਸ਼ਬਦਾਂ ਦਾ ਵਰਣਨ ਕਰਦਾ ਹੈ — ਅਤੇ 3 ਤੋਂ 5 ਕੰਟੈਂਟ ਪਿਲਰ ਤੈਅ ਕਰਨ ਵਿੱਚ, ਯਾਨੀ ਉਹ ਮੁੱਖ ਵਿਸ਼ੇ ਜਿਨ੍ਹਾਂ ਵੱਲ ਤੁਸੀਂ ਵਾਰ-ਵਾਰ ਮੁੜੋਗੇ।",
+    ex1:"<strong>ਵਿਹਾਰਕ ਉਦਾਹਰਣ:</strong> ਦਿਨ 5 ਲਈ ਪ੍ਰੋਂਪਟ — \"ਮੇਰੇ ਬ੍ਰਾਂਡ ਵੌਇਸ ਕੋਚ ਵਾਂਗ ਕੰਮ ਕਰੋ। ਮੇਰੇ ਲਿਖੇ ਇਹਨਾਂ 5 ਨਮੂਨਾ ਪੋਸਟਾਂ ਦੇ ਆਧਾਰ 'ਤੇ, ਮੇਰੇ ਟੋਨ ਨੂੰ 3 ਵਿਸ਼ੇਸ਼ਣਾਂ ਵਿੱਚ ਦੱਸੋ, 5 ਅਜਿਹੇ ਸ਼ਬਦ ਦੱਸੋ ਜਿਨ੍ਹਾਂ ਦੀ ਮੈਂ ਜ਼ਿਆਦਾ ਵਰਤੋਂ ਕਰਦਾ ਹਾਂ, ਅਤੇ ਇੱਕ ਲਾਈਨ ਦੀ ਵੌਇਸ ਗਾਈਡਲਾਈਨ ਸੁਝਾਓ ਜਿਸਨੂੰ ਮੈਂ ਹਰ ਭਵਿੱਖੀ ਪ੍ਰੋਂਪਟ ਵਿੱਚ ਦੁਬਾਰਾ ਵਰਤ ਸਕਾਂ।\"",
+    wt2:"ਹਫ਼ਤਾ 2 · ਦਿਨ 8–14", "h-week2":"ਮੌਡਿਊਲ 2: ਵਿਚਾਰ ਅਤੇ ਕੰਟੈਂਟ ਨਿਰਮਾਣ ਪ੍ਰਣਾਲੀਆਂ",
+    "p-week2a":"ਹਫ਼ਤਾ 2 ਉਹ ਥਾਂ ਹੈ ਜਿੱਥੇ AI ਅਸਲ ਵਿੱਚ ਤੁਹਾਡੇ ਘੰਟੇ ਬਚਾਉਣੇ ਸ਼ੁਰੂ ਕਰਦਾ ਹੈ। ਦਿਨ 8–9 ਬੈਚ ਵਿਚਾਰਾਂ ਲਈ ਹਨ: ਇੱਕ ਸਮੇਂ ਵਿੱਚ ਇੱਕ ਵਿਸ਼ੇ ਬਾਰੇ ਸੋਚਣ ਦੀ ਬਜਾਏ, AI-ਸਹਾਇਤਾ ਵਾਲੇ ਕੀਵਰਡ ਕਲੱਸਟਰਾਂ ਅਤੇ \"ਤੁਹਾਡੇ ਦਰਸ਼ਕ ਪਹਿਲਾਂ ਹੀ ਪੁੱਛ ਰਹੇ ਸਵਾਲਾਂ\" ਦੀ ਵਰਤੋਂ ਕਰਕੇ ਇੱਕੋ ਬੈਠਕ ਵਿੱਚ 30 ਕੰਟੈਂਟ ਵਿਚਾਰ ਤਿਆਰ ਕਰੋ।",
+    "p-week2b":"ਦਿਨ 10–11 ਮੁੜ-ਵਰਤੋਂ ਪ੍ਰਣਾਲੀ ਪੇਸ਼ ਕਰਦੇ ਹਨ — ਇਸ ਪੂਰੇ ਬਲੂਪ੍ਰਿੰਟ ਦੀ ਸਭ ਤੋਂ ਵੱਧ ਲਾਭਦਾਇਕ ਆਦਤ। ਇੱਕ ਲੰਬਾ ਕੰਟੈਂਟ ਟੁਕੜਾ ਵੱਖ-ਵੱਖ ਪਲੇਟਫਾਰਮਾਂ ਲਈ ਪੰਜ ਛੋਟੇ ਹਿੱਸਿਆਂ ਵਿੱਚ ਬਦਲ ਜਾਂਦਾ ਹੈ।",
+    tbl2h1:"ਮੂਲ ਕੰਟੈਂਟ", tbl2h2:"ਇਸ ਵਿੱਚ ਬਦਲਿਆ ਗਿਆ",
+    tbl2r1:"1 ਬਲੌਗ ਪੋਸਟ / ਲੇਖ", tbl2r2:"LinkedIn ਪੋਸਟ + X/Twitter ਥ੍ਰੈੱਡ + Instagram ਕੈਪਸ਼ਨ + ਈਮੇਲ ਸਨਿੱਪਟ + ਛੋਟੀ ਵੀਡੀਓ ਸਕ੍ਰਿਪਟ",
+    "p-week2c":"ਦਿਨ 12 <strong>60/40 ਨਿਯਮ</strong> ਲਾਗੂ ਕਰਦਾ ਹੈ: AI ਲਗਭਗ 60% ਕੰਮ ਦਾ ਖਰੜਾ ਤਿਆਰ ਕਰਦਾ ਹੈ, ਅਤੇ ਬਾਕੀ 40% ਨੂੰ ਸ਼ੁੱਧਤਾ, ਸ਼ਖਸੀਅਤ ਅਤੇ ਟੋਨ ਲਈ ਇੱਕ ਇਨਸਾਨ ਸੁਧਾਰਦਾ ਹੈ। ਦਿਨ 13–14 ਇੱਕ ਸਪ੍ਰੈੱਡਸ਼ੀਟ ਵਿੱਚ ਸਧਾਰਨ ਕੰਟੈਂਟ ਕੈਲੰਡਰ ਬਣਾ ਕੇ, ਹਰ ਹਿੱਸੇ ਨੂੰ ਇੱਕ ਪ੍ਰਕਾਸ਼ਨ ਮਿਤੀ ਨਾਲ ਜੋੜ ਕੇ ਹਫ਼ਤਾ ਪੂਰਾ ਕਰਦੇ ਹਨ।",
+    wt3:"ਹਫ਼ਤਾ 3 · ਦਿਨ 15–21", "h-week3":"ਮੌਡਿਊਲ 3: ਵੰਡ ਅਤੇ ਓਪਟੀਮਾਈਜ਼ੇਸ਼ਨ",
+    cap3:"ਵਧੀਆ ਕੰਟੈਂਟ ਤਾਂ ਹੀ ਕੰਮ ਕਰਦਾ ਹੈ ਜਦੋਂ ਇਹ ਸਹੀ ਲੋਕਾਂ ਤੱਕ ਪਹੁੰਚਦਾ ਹੈ।",
+    "p-week3a":"ਕੰਟੈਂਟ ਬਣਾਉਣਾ ਕੰਮ ਦਾ ਸਿਰਫ਼ ਅੱਧਾ ਹਿੱਸਾ ਹੈ — ਹਫ਼ਤਾ 3 ਇਸ ਨੂੰ ਦੇਖੇ ਜਾਣ ਬਾਰੇ ਹੈ। ਦਿਨ 15–16 ਪਲੇਟਫਾਰਮ-ਵਿਸ਼ੇਸ਼ ਫਾਰਮੈਟਿੰਗ ਨਿਯਮਾਂ ਨੂੰ ਕਵਰ ਕਰਦੇ ਹਨ, ਕਿਉਂਕਿ ਜੋ ਕੈਪਸ਼ਨ Instagram 'ਤੇ ਕੰਮ ਕਰਦਾ ਹੈ ਉਹ ਬਿਨਾਂ ਬਦਲਾਅ ਦੇ LinkedIn 'ਤੇ ਘੱਟ ਹੀ ਕੰਮ ਕਰਦਾ ਹੈ। ਦਿਨ 17 ਆਨ-ਪੇਜ ਓਪਟੀਮਾਈਜ਼ੇਸ਼ਨ 'ਤੇ ਧਿਆਨ ਕੇਂਦਰਿਤ ਕਰਦਾ ਹੈ: AI ਦੀ ਵਰਤੋਂ ਕਰਕੇ ਕਈ ਹੈੱਡਲਾਈਨ ਅਤੇ ਮੈਟਾ-ਵਰਣਨ ਬਦਲ ਤਿਆਰ ਕਰੋ, ਫਿਰ ਸਭ ਤੋਂ ਚਲਾਕ ਨਹੀਂ ਸਗੋਂ ਸਭ ਤੋਂ ਸਪਸ਼ਟ, ਖਾਸ ਵਾਲਾ ਚੁਣੋ।",
+    seo1:"ਇੱਕ ਵਿਆਪਕ, ਆਮ ਸਿਰਲੇਖ ਦੀ ਬਜਾਏ ਇੱਕ ਖਾਸ, ਲੌਂਗ-ਟੇਲ ਸਿਰਲੇਖ ਲਿਖੋ",
+    seo2:"AI ਤੋਂ 5 ਹੈੱਡਲਾਈਨ ਬਦਲ ਤਿਆਰ ਕਰਵਾਓ, ਫਿਰ ਚਲਾਕੀ ਨਾਲ ਨਹੀਂ, ਸਪਸ਼ਟਤਾ ਨਾਲ ਚੁਣੋ",
+    seo3:"ਪਹੁੰਚਯੋਗਤਾ ਅਤੇ ਖੋਜ ਲਈ ਹਰ ਤਸਵੀਰ ਵਿੱਚ ਵਰਣਨਾਤਮਕ ਆਲਟ ਟੈਕਸਟ ਸ਼ਾਮਲ ਕਰੋ",
+    seo4:"ਮੈਟਾ ਵਰਣਨ ਨੂੰ 155 ਅੱਖਰਾਂ ਦੇ ਅੰਦਰ ਰੱਖੋ ਅਤੇ ਲਾਭ-ਕੇਂਦਰਿਤ ਰੱਖੋ",
+    "p-week3b":"ਦਿਨ 18–21 ਹੈਸ਼ਟੈਗ ਅਤੇ ਕਮਿਊਨਿਟੀ ਵੰਡ, ਨਿਊਜ਼ਲੈਟਰ ਏਕੀਕਰਨ, ਅਤੇ ਟਿੱਪਣੀਆਂ ਦੇ ਸੋਚੇ-ਸਮਝੇ ਜਵਾਬ ਤਿਆਰ ਕਰਨ (ਕਦੇ ਵੀ ਆਟੋ-ਭੇਜੇ ਨਾ ਜਾਣ) ਲਈ AI ਦੀ ਵਰਤੋਂ ਕਰਨ ਨੂੰ ਕਵਰ ਕਰਦੇ ਹਨ — ਕਿਉਂਕਿ ਸ਼ਮੂਲੀਅਤ ਹੀ ਕਿਸੇ ਵੀ ਪਲੇਟਫਾਰਮ ਦੇ ਐਲਗੋਰਿਦਮ ਨੂੰ ਪ੍ਰਸੰਗਿਕਤਾ ਦਾ ਸੰਕੇਤ ਦਿੰਦੀ ਹੈ।",
+    wt4:"ਹਫ਼ਤਾ 4 · ਦਿਨ 22–30", "h-week4":"ਮੌਡਿਊਲ 4: ਵਿਸਥਾਰ, ਵਿਸ਼ਲੇਸ਼ਣ ਅਤੇ ਆਟੋਮੇਸ਼ਨ",
+    "p-week4a":"ਆਖਰੀ ਮੌਡਿਊਲ ਤੁਹਾਡੀ ਕੰਟੈਂਟ ਪ੍ਰਣਾਲੀ ਨੂੰ ਇੱਕ ਅਜਿਹੀ ਮਸ਼ੀਨ ਵਿੱਚ ਬਦਲ ਦਿੰਦਾ ਹੈ ਜੋ ਆਪਣੇ ਆਪ ਨੂੰ ਸੁਧਾਰਦੀ ਹੈ। ਦਿਨ 22–23 ਕਲਿੱਕ-ਥਰੂ ਦਰ, ਸ਼ਮੂਲੀਅਤ ਅਤੇ ਕਨਵਰਜ਼ਨ ਨੂੰ ਟ੍ਰੈਕ ਕਰਨ ਵਾਲਾ ਇੱਕ ਸਧਾਰਨ ਵਿਸ਼ਲੇਸ਼ਣ ਡੈਸ਼ਬੋਰਡ ਸਥਾਪਤ ਕਰਨ ਲਈ ਹਨ — ਸਿਰਫ਼ ਤਿੰਨ ਅੰਕੜੇ, ਇਸ ਤੋਂ ਵੱਧ ਨਹੀਂ, ਤਾਂ ਜੋ ਤੁਸੀਂ ਡਾਟੇ ਵਿੱਚ ਨਾ ਡੁੱਬੋ।",
+    cap4:"ਅੱਗੇ ਕੀ ਬਣਾਉਣਾ ਹੈ ਇਹ ਅੰਦਾਜ਼ੇ ਨਾਲ ਨਹੀਂ — ਪ੍ਰਦਰਸ਼ਨ ਡਾਟੇ ਨਾਲ ਤੈਅ ਕਰੋ।",
+    "p-week4b":"ਦਿਨ 24–25 ਤੁਹਾਡੇ ਤਿੰਨ ਸਭ ਤੋਂ ਵਧੀਆ ਪ੍ਰਦਰਸ਼ਨ ਕਰਨ ਵਾਲੇ ਹਿੱਸਿਆਂ ਦੀ ਪਛਾਣ ਕਰਦੇ ਹਨ ਅਤੇ ਹਰ ਇੱਕ ਦੇ ਆਲੇ-ਦੁਆਲੇ AI ਦੀ ਮਦਦ ਨਾਲ ਇੱਕ \"ਕੰਟੈਂਟ ਕਲੱਸਟਰ\" ਬਣਾਉਂਦੇ ਹਨ — ਪੰਜ ਸੰਬੰਧਿਤ ਹਿੱਸੇ ਜੋ ਜੇਤੂ ਨੂੰ ਹੋਰ ਮਜ਼ਬੂਤ ਕਰਦੇ ਹਨ। ਦਿਨ 26–27 ਹਲਕਾ ਆਟੋਮੇਸ਼ਨ ਪੇਸ਼ ਕਰਦੇ ਹਨ: ਪੋਸਟਾਂ ਨੂੰ ਆਟੋ-ਸ਼ਡਿਊਲ ਕਰਨਾ ਅਤੇ ਦਰਸ਼ਕਾਂ ਦੀਆਂ ਟਿੱਪਣੀਆਂ ਨੂੰ ਹਫ਼ਤਾਵਾਰੀ ਵਿਸ਼ਿਆਂ ਵਿੱਚ ਸੰਖੇਪ ਕਰਨ ਲਈ AI ਦੀ ਵਰਤੋਂ ਕਰਨਾ।",
+    ex4:"<strong>ਵਿਹਾਰਕ ਉਦਾਹਰਣ — ਦਿਨ 28 ਲਈ ਸਧਾਰਨ SOP:</strong> \"1) ਪਿਛਲੇ ਹਫ਼ਤੇ ਦੇ ਟੌਪ ਟਿੱਪਣੀ ਵਿਸ਼ੇ ਕੱਢੋ। 2) ਉਹਨਾਂ ਵਿਸ਼ਿਆਂ ਦਾ ਜਵਾਬ ਦੇਣ ਵਾਲੇ 3 ਨਵੇਂ ਪੋਸਟ ਵਿਚਾਰ ਤਿਆਰ ਕਰੋ। 3) ਬ੍ਰਾਂਡ ਵੌਇਸ ਗਾਈਡ ਦੇ ਟੋਨ ਵਿੱਚ ਪਹਿਲੇ ਖਰੜੇ ਲਿਖੋ। 4) ਇਨਸਾਨੀ ਸੰਪਾਦਕ ਕੋਲ ਜਾਣ ਤੋਂ ਪਹਿਲਾਂ ਜਿਸ ਵੀ ਚੀਜ਼ ਨੂੰ ਤੱਥ-ਜਾਂਚ ਦੀ ਲੋੜ ਹੋਵੇ ਉਸਨੂੰ ਫਲੈਗ ਕਰੋ।\"",
+    "p-week4c":"ਦਿਨ 28 ਤੁਹਾਡੇ ਆਪਣੇ ਵਰਕਫਲੋ ਨੂੰ ਇੱਕ ਲਿਖਤੀ ਮਿਆਰੀ ਸੰਚਾਲਨ ਪ੍ਰਕਿਰਿਆ (SOP) ਵਿੱਚ ਬਦਲਣ ਲਈ ਹੈ, ਜਿਸਨੂੰ AI ਜਾਂ ਕੋਈ ਸਾਥੀ ਤੁਹਾਡੇ ਬਿਨਾਂ ਵੀ ਪਾਲਣਾ ਕਰ ਸਕੇ। ਦਿਨ 29 ਪਿਛਲੇ ਮਹੀਨੇ ਦੇ ਪ੍ਰਦਰਸ਼ਨ ਡਾਟੇ ਦੀ ਵਰਤੋਂ ਕਰਕੇ ਅਗਲੇ ਮਹੀਨੇ ਦੇ ਪਿਲਰ ਤੈਅ ਕਰਦਾ ਹੈ। ਦਿਨ 30 ਪੂਰੇ ਮਹੀਨੇ ਦੀ ਸਮੀਖਿਆ ਅਤੇ AI-ਤਿਆਰ ਪ੍ਰਦਰਸ਼ਨ ਸਾਰ ਨਾਲ ਚੱਕਰ ਬੰਦ ਕਰਦਾ ਹੈ — ਫਿਰ 30-ਦਿਨਾਂ ਦਾ ਚੱਕਰ ਦੁਬਾਰਾ ਸ਼ੁਰੂ ਹੁੰਦਾ ਹੈ, ਪਹਿਲਾਂ ਨਾਲੋਂ ਵੀ ਵਧੀਆ।",
+    "h-mistakes":"ਆਮ ਗਲਤੀਆਂ ਜੋ ਚੁੱਪਚਾਪ AI ਕੰਟੈਂਟ ਮਾਰਕੀਟਿੰਗ ਨੂੰ ਨੁਕਸਾਨ ਪਹੁੰਚਾਉਂਦੀਆਂ ਹਨ",
+    m1:"ਸ਼ੁੱਧਤਾ ਅਤੇ ਟੋਨ ਲਈ ਇਨਸਾਨੀ ਸੰਪਾਦਨ ਤੋਂ ਬਿਨਾਂ ਕੱਚਾ AI ਆਉਟਪੁੱਟ ਪ੍ਰਕਾਸ਼ਿਤ ਕਰਨਾ",
+    m2:"ਬ੍ਰਾਂਡ ਵੌਇਸ ਗਾਈਡ ਨੂੰ ਛੱਡਣਾ, ਜਿਸ ਨਾਲ ਕੰਟੈਂਟ ਆਮ ਅਤੇ ਬਦਲਣਯੋਗ ਲੱਗਦਾ ਹੈ",
+    m3:"ਪਹਿਲਾਂ ਇੱਕ ਪਲੇਟਫਾਰਮ 'ਤੇ ਮੁਹਾਰਤ ਹਾਸਲ ਕਰਨ ਦੀ ਬਜਾਏ ਇੱਕੋ ਸਮੇਂ ਹਰ ਪਲੇਟਫਾਰਮ 'ਤੇ ਪੋਸਟ ਕਰਨ ਦੀ ਕੋਸ਼ਿਸ਼ ਕਰਨਾ",
+    m4:"ਮੁੜ-ਵਰਤੋਂ ਪ੍ਰਣਾਲੀ ਤੋਂ ਬਿਨਾਂ ਕੰਟੈਂਟ ਬਣਾਉਣਾ, ਜਿਸ ਨਾਲ ਇਸਦੀ 80% ਸੰਭਾਵੀ ਪਹੁੰਚ ਬਰਬਾਦ ਹੋ ਜਾਂਦੀ ਹੈ",
+    m5:"ਵਿਸ਼ਲੇਸ਼ਣ ਕਦੇ ਨਾ ਵੇਖਣਾ, ਜਿਸ ਨਾਲ ਉਹੀ ਗਲਤੀਆਂ ਹਰ ਮਹੀਨੇ ਦੁਹਰਾਈਆਂ ਜਾਂਦੀਆਂ ਹਨ",
+    m6:"ਸਰੋਤ ਦੀ ਪੁਸ਼ਟੀ ਕੀਤੇ ਬਿਨਾਂ AI-ਤਿਆਰ ਤੱਥਾਂ, ਅੰਕੜਿਆਂ ਜਾਂ ਹਵਾਲਿਆਂ 'ਤੇ ਭਰੋਸਾ ਕਰਨਾ",
+    "h-tools":"ਤੁਰੰਤ ਹਵਾਲਾ: ਟੂਲ ਸ਼੍ਰੇਣੀਆਂ ਜਿਨ੍ਹਾਂ ਦੀ ਤੁਹਾਨੂੰ ਅਸਲ ਵਿੱਚ ਲੋੜ ਹੈ",
+    tool1h:"ਰਾਈਟਿੰਗ ਅਸਿਸਟੈਂਟ", tool1p:"ਟੈਕਸਟ-ਆਧਾਰਿਤ ਕੰਟੈਂਟ ਦਾ ਖਰੜਾ ਤਿਆਰ ਕਰਨ, ਰੂਪਰੇਖਾ ਬਣਾਉਣ ਅਤੇ ਮੁੜ-ਵਰਤੋਂ ਲਈ ਇੱਕ AI ਚੈਟ ਅਸਿਸਟੈਂਟ।",
+    tool2h:"ਵਿਜ਼ੁਅਲ ਡਿਜ਼ਾਈਨ", tool2p:"ਗ੍ਰਾਫਿਕਸ, ਥੰਬਨੇਲ ਅਤੇ ਬ੍ਰਾਂਡਡ ਟੈਂਪਲੇਟਾਂ ਲਈ AI-ਸਹਾਇਤਾ ਵਾਲਾ ਡਿਜ਼ਾਈਨ ਟੂਲ।",
+    tool3h:"ਸ਼ਡਿਊਲਿੰਗ", tool3p:"ਇੱਕੋ ਕੈਲੰਡਰ ਦ੍ਰਿਸ਼ ਤੋਂ ਕਈ ਪਲੇਟਫਾਰਮਾਂ 'ਤੇ ਪੋਸਟਾਂ ਨੂੰ ਕਤਾਰਬੱਧ ਕਰਨ ਵਾਲਾ ਸ਼ਡਿਊਲਰ।",
+    tool4h:"ਵਿਸ਼ਲੇਸ਼ਣ", tool4p:"ਸਿਰਫ਼ ਕਲਿੱਕ, ਸ਼ਮੂਲੀਅਤ ਅਤੇ ਕਨਵਰਜ਼ਨ ਨੂੰ ਟ੍ਰੈਕ ਕਰਨ ਵਾਲਾ ਸਧਾਰਨ ਡੈਸ਼ਬੋਰਡ।",
+    tool5h:"ਕੀਵਰਡ ਖੋਜ", tool5p:"ਖਾਸ, ਘੱਟ ਮੁਕਾਬਲੇ ਵਾਲੇ ਵਿਸ਼ੇ ਕੋਣ ਲੱਭਣ ਲਈ ਇੱਕ ਹਲਕਾ ਟੂਲ।",
+    tool6h:"ਸ਼ਾਰਟ-ਫਾਰਮ ਵੀਡੀਓ", tool6p:"ਟੈਕਸਟ ਵਿਚਾਰਾਂ ਨੂੰ ਤੇਜ਼ ਕਲਿੱਪਾਂ ਵਿੱਚ ਬਦਲਣ ਵਾਲਾ AI ਵੀਡੀਓ/ਕੈਪਸ਼ਨ ਟੂਲ।",
+    "h-cta":"ਤੁਹਾਡੇ 30 ਦਿਨ ਅੱਜ ਤੋਂ ਸ਼ੁਰੂ ਹੁੰਦੇ ਹਨ",
+    "p-cta":"ਲਗਾਤਾਰ ਵਧਣ ਵਾਲੀ ਕੰਟੈਂਟ ਪ੍ਰਣਾਲੀ ਬਣਾਉਣ ਲਈ ਤੁਹਾਨੂੰ ਚਾਲੀ ਟੂਲ, ਮਾਰਕੀਟਿੰਗ ਡਿਗਰੀ ਜਾਂ ਵੱਡੇ ਬਜਟ ਦੀ ਲੋੜ ਨਹੀਂ ਹੈ। ਤੁਹਾਨੂੰ ਲੋੜ ਹੈ ਇੱਕ ਸਪਸ਼ਟ ਦਿਨ-ਪ੍ਰਤੀ-ਦਿਨ ਯੋਜਨਾ, ਪਹਿਲੇ ਚੱਕਰ ਲਈ ਥੋੜ੍ਹਾ ਅਨੁਸ਼ਾਸਨ, ਅਤੇ ਅਗਲੇ ਚੱਕਰ ਨੂੰ ਪ੍ਰਦਰਸ਼ਨ ਡਾਟੇ ਨਾਲ ਸੇਧਿਤ ਹੋਣ ਦੇਣ ਦੀ ਇੱਛਾ। ਇਸ ਬਲੂਪ੍ਰਿੰਟ ਨੂੰ ਬੁੱਕਮਾਰਕ ਕਰੋ, ਅੱਜ ਹੀ ਦਿਨ 1 ਤੋਂ ਸ਼ੁਰੂ ਕਰੋ, ਅਤੇ ਹਰ ਮਹੀਨੇ ਦੁਬਾਰਾ ਦੇਖੋ — ਹਰ ਚੱਕਰ ਪਿਛਲੇ ਨਾਲੋਂ ਤੇਜ਼ ਅਤੇ ਵਧੀਆ ਹੁੰਦਾ ਜਾਵੇਗਾ।",
+    ctaBtn:"ਹਫ਼ਤਾ 1 ਤੋਂ ਸ਼ੁਰੂ ਕਰੋ",
+    footerText:"ਮੌਲਿਕ ਲੇਖ · ਕ੍ਰਿਏਟਰਾਂ, ਮਾਰਕੀਟਰਾਂ ਅਤੇ ਆਪਣੀ AI ਕੰਟੈਂਟ ਯਾਤਰਾ ਸ਼ੁਰੂ ਕਰਨ ਵਾਲੇ ਛੋਟੇ ਕਾਰੋਬਾਰਾਂ ਲਈ ਲਿਖਿਆ ਗਿਆ।"
+  },
+  fr: {
+    langLabel:"Lire en :",
+    tag1:"Marketing IA", tag2:"Idéal pour débutants", tag3:"Système de 30 jours",
+    mainTitle:"Le plan d'action marketing de contenu IA en 30 jours",
+    mainSubtitle:"Une feuille de route étape par étape pour planifier, créer, diffuser et développer du contenu grâce à l'IA — divisée en modules quotidiens simples, accessibles même sans expérience préalable.",
+    mainMeta:"9 min de lecture · Niveau débutant à intermédiaire · Mis à jour en 2026",
+    "h-intro":"Pourquoi la plupart des gens échouent en marketing de contenu IA — et comment ce plan corrige cela",
+    "p-intro":"La plupart des créateurs et petites entreprises n'échouent pas en marketing de contenu IA parce que les outils sont mauvais, mais parce qu'ils n'ont jamais eu de véritable système. Ils ouvrent un assistant IA, génèrent une publication au hasard, la publient, puis se demandent pourquoi rien ne change. Les vrais résultats viennent d'une structure, pas d'une simple instruction ponctuelle.",
+    "p-intro2":"Ce plan divise tout le processus en quatre modules hebdomadaires intuitifs qui s'appuient les uns sur les autres : <strong>Fondations</strong>, <strong>Création</strong>, <strong>Diffusion</strong> et <strong>Croissance</strong>. Chaque jour a une tâche claire, afin que vous sachiez toujours exactement quoi faire ensuite — sans confusion, sans improvisation, juste un système reproductible que vous pouvez répéter chaque mois.",
+    wt1:"SEMAINE 1 · JOURS 1–7", "h-week1":"Module 1 : Fondations et configuration des outils IA",
+    "p-week1a":"Avant de créer quoi que ce soit, vous devez savoir clairement pour qui vous écrivez et quels outils feront le gros du travail. Les jours 1–2 consistent à auditer votre contenu existant et à construire un persona d'audience précis grâce à l'IA. Les jours 3–4 se concentrent sur le choix de deux ou trois outils IA essentiels — un pour l'écriture, un pour le visuel, un pour la planification — plutôt que de courir après chaque nouvelle application.",
+    cap1:"Une base claire évite de gaspiller du contenu par la suite.",
+    "p-week1b":"Les jours 5–7 sont consacrés à la construction de votre « guide de voix de marque » — un court document décrivant votre ton, vos valeurs et les mots à éviter — et à la définition de 3 à 5 piliers de contenu, les sujets essentiels vers lesquels vous reviendrez toujours.",
+    ex1:"<strong>Exemple pratique :</strong> instruction pour le jour 5 — « Agis comme mon coach de voix de marque. À partir de ces 5 exemples de publications que j'ai écrites, décris mon ton en 3 adjectifs, liste 5 mots que j'utilise trop souvent, et propose une consigne de voix en une ligne que je pourrai réutiliser dans chaque future instruction. »",
+    wt2:"SEMAINE 2 · JOURS 8–14", "h-week2":"Module 2 : Idéation et systèmes de création de contenu",
+    "p-week2a":"C'est en semaine 2 que l'IA commence vraiment à vous faire gagner des heures. Les jours 8–9 sont consacrés à l'idéation par lots : au lieu de penser à un sujet à la fois, générez 30 idées de contenu en une seule session grâce aux clusters de mots-clés assistés par IA et aux « questions que votre audience se pose déjà ».",
+    "p-week2b":"Les jours 10–11 introduisent le système de recyclage de contenu — l'habitude la plus rentable de tout ce plan. Un contenu long se transforme en cinq formats plus courts pour différentes plateformes.",
+    tbl2h1:"Contenu original", tbl2h2:"Transformé en",
+    tbl2r1:"1 article de blog", tbl2r2:"Publication LinkedIn + fil X/Twitter + légende Instagram + extrait d'e-mail + script de vidéo courte",
+    "p-week2c":"Le jour 12 applique la <strong>règle du 60/40</strong> : l'IA rédige environ 60 % du travail, et un humain affine les 40 % restants pour l'exactitude, la personnalité et le ton. Les jours 13–14 clôturent la semaine en construisant un calendrier de contenu simple dans un tableur, en associant chaque contenu à une date de publication.",
+    wt3:"SEMAINE 3 · JOURS 15–21", "h-week3":"Module 3 : Diffusion et optimisation",
+    cap3:"Un excellent contenu n'est efficace que s'il atteint les bonnes personnes.",
+    "p-week3a":"Créer du contenu n'est que la moitié du travail — la semaine 3 consiste à le faire voir. Les jours 15–16 couvrent les règles de mise en forme propres à chaque plateforme, car une légende qui fonctionne sur Instagram fonctionne rarement sur LinkedIn sans ajustement. Le jour 17 se concentre sur l'optimisation on-page : utiliser l'IA pour rédiger plusieurs variantes de titre et de méta-description, puis choisir la plus claire et la plus précise plutôt que la plus astucieuse.",
+    seo1:"Rédigez un titre précis et de longue traîne plutôt qu'un titre large et générique",
+    seo2:"Faites générer 5 variantes de titre par l'IA, puis choisissez selon la clarté, pas l'originalité",
+    seo3:"Ajoutez un texte alternatif descriptif à chaque image, pour l'accessibilité et la recherche",
+    seo4:"Gardez les méta-descriptions sous 155 caractères et centrées sur le bénéfice",
+    "p-week3b":"Les jours 18–21 couvrent la diffusion via hashtags et communautés, l'intégration à la newsletter, et l'utilisation de l'IA pour rédiger (jamais envoyer automatiquement) des réponses réfléchies aux commentaires — car l'engagement est ce qui signale la pertinence à l'algorithme de toute plateforme.",
+    wt4:"SEMAINE 4 · JOURS 22–30", "h-week4":"Module 4 : Croissance, analyse et automatisation",
+    "p-week4a":"Le dernier module transforme votre système de contenu en une machine qui s'améliore d'elle-même. Les jours 22–23 consistent à mettre en place un tableau de bord analytique simple suivant le taux de clics, l'engagement et les conversions — trois chiffres, pas plus, pour ne jamais vous noyer dans les données.",
+    cap4:"Laissez les données de performance — pas les suppositions — décider de votre prochain contenu.",
+    "p-week4b":"Les jours 24–25 identifient vos trois contenus les plus performants et utilisent l'IA pour créer un « cluster de contenu » autour de chacun — cinq contenus liés qui renforcent le gagnant. Les jours 26–27 introduisent une automatisation légère : planification automatique des publications et utilisation de l'IA pour résumer les commentaires de l'audience en thèmes hebdomadaires.",
+    ex4:"<strong>Exemple pratique — SOP simple pour le jour 28 :</strong> « 1) Extraire les principaux thèmes de commentaires de la semaine dernière. 2) Rédiger 3 nouvelles idées de publication répondant à ces thèmes. 3) Écrire les premiers brouillons dans le ton du guide de voix de marque. 4) Signaler tout ce qui nécessite une vérification des faits avant l'envoi à l'éditeur humain. »",
+    "p-week4c":"Le jour 28 consiste à transformer votre propre flux de travail en une procédure opérationnelle standard (SOP) écrite, que l'IA ou un collègue peut suivre sans vous. Le jour 29 utilise les données de performance du mois précédent pour planifier les piliers du mois suivant. Le jour 30 clôture le cycle avec un bilan complet du mois et un résumé de performance généré par IA — puis le cycle de 30 jours recommence, plus affûté qu'avant.",
+    "h-mistakes":"Les erreurs courantes qui sabotent discrètement le marketing de contenu IA",
+    m1:"Publier un texte brut généré par l'IA sans relecture humaine pour l'exactitude et le ton",
+    m2:"Négliger le guide de voix de marque, ce qui rend le contenu générique et interchangeable",
+    m3:"Essayer de publier sur toutes les plateformes à la fois plutôt que de maîtriser une seule d'abord",
+    m4:"Créer du contenu sans système de recyclage, gaspillant 80 % de sa portée potentielle",
+    m5:"Ne jamais consulter les analyses, ce qui fait que les mêmes erreurs se répètent chaque mois",
+    m6:"Faire confiance aux faits, statistiques ou citations générés par l'IA sans en vérifier la source",
+    "h-tools":"Référence rapide : les seules catégories d'outils dont vous avez vraiment besoin",
+    tool1h:"Assistant de rédaction", tool1p:"Un assistant IA pour rédiger, structurer et recycler du contenu textuel.",
+    tool2h:"Design visuel", tool2p:"Un outil de design assisté par IA pour les graphiques, miniatures et modèles de marque.",
+    tool3h:"Planification", tool3p:"Un planificateur pour programmer des publications sur plusieurs plateformes depuis un seul calendrier.",
+    tool4h:"Analytique", tool4p:"Un tableau de bord simple qui suit uniquement les clics, l'engagement et les conversions.",
+    tool5h:"Recherche de mots-clés", tool5p:"Un outil léger pour trouver des angles de sujets précis et peu concurrentiels.",
+    tool6h:"Vidéo courte", tool6p:"Un outil IA vidéo/sous-titres pour transformer des idées textuelles en clips rapides.",
+    "h-cta":"Vos 30 jours commencent aujourd'hui",
+    "p-cta":"Vous n'avez pas besoin de quarante outils, d'un diplôme en marketing ou d'un gros budget pour bâtir un système de contenu qui s'accumule. Il vous faut un plan clair jour par jour, un peu de discipline pour le premier cycle, et la volonté de laisser les données de performance guider le suivant. Enregistrez ce plan, commencez au jour 1 dès aujourd'hui, et revenez-y chaque mois — chaque cycle sera plus rapide et plus efficace que le précédent.",
+    ctaBtn:"Commencer par la semaine 1",
+    footerText:"Article original · Écrit pour les créateurs, marketeurs et petites entreprises qui débutent leur parcours de marketing de contenu IA."
+  }
+};
+
+const originalEN = {};
+document.querySelectorAll('[id]').forEach(el=>{
+  originalEN[el.id] = el.innerHTML;
+});
+
+function setLanguage(lang){
+  document.querySelectorAll('.langBtn').forEach(b=>{
+    b.classList.toggle('active', b.dataset.lang===lang);
+  });
+  document.documentElement.lang = lang;
+  if(lang==='en'){
+    Object.keys(originalEN).forEach(id=>{
+      const el = document.getElementById(id);
+      if(el) el.innerHTML = originalEN[id];
+    });
+    return;
+  }
+  const dict = translations[lang];
+  if(!dict) return;
+  Object.keys(dict).forEach(id=>{
+    const el = document.getElementById(id);
+    if(el) el.innerHTML = dict[id];
+  });
+}
+
+document.querySelectorAll('.langBtn').forEach(btn=>{
+  btn.addEventListener('click', ()=> setLanguage(btn.dataset.lang));
+});
+</script>
+</body>
+</html>
